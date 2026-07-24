@@ -1,0 +1,110 @@
+.testimonials-section {
+  padding: 96px 0;
+  background: var(--plum-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 50%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(200,183,166,0.05) 0%, transparent 70%);
+}
+
+.testimonials-section .section-label { color: var(--taupe-light); opacity: 0.7; }
+.testimonials-section h2 { color: white; }
+.testimonials-section .section-header p { color: rgba(255,255,255,0.6); }
+.testimonials-section .divider-line { background: rgba(200,183,166,0.4); }
+
+.testimonial-featured {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-quote-icon {
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.testimonial-stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--plum-mid);
+  border: 2px solid var(--taupe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--taupe-light);
+  font-weight: 500;
+}
+
+.testimonial-author div {
+  text-align: left;
+}
+
+.testimonial-author strong {
+  display: block;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  color: var(--taupe-light);
+  opacity: 0.8;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--taupe-light);
+  transform: scale(1.3);
+}

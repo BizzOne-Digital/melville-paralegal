@@ -1,0 +1,87 @@
+.intake-section { padding: 72px 0; }
+
+.intake-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+  align-items: start;
+}
+
+.intake-disclaimer {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--plum-light);
+  border: 1px solid rgba(90,55,73,0.15);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  color: var(--plum-dark);
+}
+
+.intake-disclaimer svg { flex-shrink: 0; margin-top: 2px; }
+.intake-disclaimer p { font-size: 0.82rem; line-height: 1.65; }
+
+.intake-consent {
+  background: var(--warm-white);
+  border: 1px solid var(--taupe-light);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  font-size: 0.78rem;
+  color: var(--charcoal-light);
+  line-height: 1.65;
+}
+
+/* Sidebar */
+.intake-info-card {
+  background: var(--plum-dark);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  margin-bottom: 16px;
+}
+
+.intake-info-card h3 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.intake-steps { list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 0; }
+
+.intake-steps li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.intake-steps li > span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--taupe-light);
+  flex-shrink: 0;
+}
+
+.intake-steps strong { display: block; font-size: 0.875rem; color: white; margin-bottom: 3px; }
+.intake-steps p { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; margin: 0; }
+
+.intake-contact-card {
+  background: white;
+  border: 1px solid var(--taupe-light);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+}
+
+.intake-contact-card h4 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--taupe); margin-bottom: 12px; font-family: var(--font-body); }
+.intake-contact-card p { font-size: 0.855rem; color: var(--charcoal-light); margin-bottom: 4px; }
+
+@media (max-width: 900px) {
+  .intake-grid { grid-template-columns: 1fr; }
+  .intake-sidebar { order: -1; }
+}
