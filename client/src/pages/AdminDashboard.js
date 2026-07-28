@@ -203,7 +203,7 @@ function IntakeManager() {
           {intakes.map(item => (
             <div key={item._id} className={`admin-list-item${selected?._id === item._id ? ' active' : ''}`} onClick={() => setSelected(item)}>
               <div className="list-item-main">
-                <strong>{item.firstName} {item.lastName}</strong>
+                <strong>{item.fullName}</strong>
                 <span>{item.serviceType?.substring(0, 40)}...</span>
               </div>
               <div className="list-item-meta">
@@ -219,18 +219,13 @@ function IntakeManager() {
           <div className="admin-detail-panel">
             <div className="detail-header">
               <div>
-                <h3>{selected.firstName} {selected.lastName} {selected.preferredName && `(${selected.preferredName})`}</h3>
-                <span>{selected.email} {selected.phone && `· ${selected.phone}`}</span>
+                <h3>{selected.fullName}</h3>
+                <span>{selected.email} {selected.phone && `· ${selected.phone}`} {selected.city && `· ${selected.city}`}</span>
               </div>
               <button className="detail-close" onClick={() => setSelected(null)}>✕</button>
             </div>
-            <div className="detail-field"><strong>Service Type:</strong> {selected.serviceType}</div>
-            {selected.courtOrTribunal && <div className="detail-field"><strong>Court/Tribunal:</strong> {selected.courtOrTribunal}</div>}
-            {selected.fileNumber && <div className="detail-field"><strong>File Number:</strong> {selected.fileNumber}</div>}
-            {selected.opposingParties && <div className="detail-field"><strong>Opposing/Related Parties:</strong> {selected.opposingParties}</div>}
-            {selected.knownDates && <div className="detail-field"><strong>Known Dates:</strong> {selected.knownDates}</div>}
-            <div className="detail-field"><strong>Preferred Contact:</strong> {selected.preferredContact}</div>
-            {selected.preferredTime && <div className="detail-field"><strong>Availability:</strong> {selected.preferredTime}</div>}
+            <div className="detail-field"><strong>Service Needed:</strong> {selected.serviceType}</div>
+            {selected.deadlineDate && <div className="detail-field"><strong>Upcoming Deadline/Hearing:</strong> {selected.deadlineDate}</div>}
             {selected.briefDescription && <div className="detail-message">{selected.briefDescription}</div>}
             <div className="detail-actions">
               {['new', 'contacted', 'accepted', 'declined'].map(s => (

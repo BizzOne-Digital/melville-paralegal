@@ -34,16 +34,16 @@ const CheckIcon = () => (
 );
 
 const badges = [
-  { icon: <ShieldIcon />, text: 'LSO Regulated' },
-  { icon: <HeartIcon />, text: 'Compassionate Advocacy' },
-  { icon: <ScaleIcon />, text: 'Plain-Language Legal Help' },
+  { icon: <ShieldIcon />, text: 'Licensed by the Law Society of Ontario' },
+  { icon: <HeartIcon />, text: 'Clear Scope of Work and Written Fees' },
+  { icon: <ScaleIcon />, text: 'Direct Communication With Your Paralegal' },
 ];
 
 const highlights = [
   'ODSP & CPP Disability Appeals',
   'Landlord & Tenant Board',
-  'Small Claims Court',
-  'Notary & Commissioner Services',
+  'Small Claims Court & Enforcement',
+  'Notary & Commissioner for Taking Affidavits',
 ];
 
 export default function Hero() {
@@ -71,16 +71,24 @@ export default function Hero() {
         <div className={`hero-content${visible ? ' visible' : ''}`}>
           <span className="hero-eyebrow">
             <span className="eyebrow-dot" />
-            CommunityVotes Milton 2026 Platinum Winner — Paralegals category
+            Melville Paralegal Services
           </span>
 
           <h1 className="hero-headline">
-            Legal Help That
-            <span className="hero-highlight"> Puts You First</span>
+            Compassionate Guidance.
+            <span className="hero-highlight"> Intelligent Advocacy.</span>
           </h1>
 
           <p className="hero-tagline">
             Helping clients navigate legal processes with compassion, clarity, strategy and confidence.
+          </p>
+
+          <p className="hero-supporting-copy">
+            Legal and disability-benefit issues can feel complicated, time-sensitive and overwhelming. Melville Paralegal
+            Services provides compassionate, well-prepared assistance to people appealing ODSP and CPP Disability
+            decisions, as well as Ontario landlords, Human Rights Tribunal parties and Small Claims Court clients. You
+            will receive clear information, thoughtful legal analysis, honest assessments and respectful support based
+            on the circumstances of your matter.
           </p>
 
           <ul className="hero-checklist">
@@ -93,12 +101,12 @@ export default function Hero() {
           </ul>
 
           <div className="hero-actions">
-            <Link to="/intake" className="btn-primary hero-btn-main">
-              Request a Consultation <ArrowIcon />
+            <Link to="/contact" className="btn-primary hero-btn-main">
+              Request a Disability Appeal Consultation <ArrowIcon />
             </Link>
-            <Link to="/services" className="btn-secondary">
-              View Services
-            </Link>
+            <a href="tel:+12899817712" className="btn-secondary">
+              Call or Text 289-981-7712
+            </a>
           </div>
 
           <div className="hero-badges">
@@ -108,6 +116,14 @@ export default function Hero() {
                 <span>{b.text}</span>
               </div>
             ))}
+          </div>
+
+          <div className="hero-award-line">
+            <img
+              src={`${process.env.PUBLIC_URL}/homepage-award.png`}
+              alt="CommunityVotes Milton 2026 Platinum Winner — Paralegals category"
+              className="hero-award-badge-img"
+            />
           </div>
         </div>
       </div>

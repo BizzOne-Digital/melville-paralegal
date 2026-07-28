@@ -36,20 +36,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <div className="footer-logo-mark"><span>M</span></div>
-              <div>
-                <span className="footer-logo-name">Melville</span>
-                <span className="footer-logo-sub">Paralegal Services</span>
-              </div>
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Melville Paralegal Services" className="footer-logo-img" />
             </div>
             <p className="footer-tagline">
-              Helping clients navigate legal processes with compassion, clarity, strategy and confidence.
+              Heidi Melville, Licensed Paralegal (Ontario). Compassionate, intelligent advocacy with a primary focus on ODSP
+              and CPP Disability appeals, followed by Ontario landlord matters, Human Rights Tribunal proceedings, Small
+              Claims Court and judgment enforcement, and Notary Public / Commissioner for Taking Affidavits services.
             </p>
             <div className="footer-award">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold-accent)" strokeWidth="1.5">
-                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
-              </svg>
-              <span>CommunityVotes Milton 2026 Platinum Winner — Paralegals category</span>
+              <img
+                src={`${process.env.PUBLIC_URL}/homepage-award.png`}
+                alt="CommunityVotes Milton 2026 Platinum Winner — Paralegals category"
+                className="footer-award-img"
+              />
             </div>
             <a
               href="https://lso.ca/home"
@@ -66,11 +65,12 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><Link to="/services/disability-benefits">ODSP & CPP Disability</Link></li>
-              <li><Link to="/services/landlord-tenant">Landlord & Tenant Board</Link></li>
+              <li><Link to="/services/disability-benefits">Disability Benefits Appeals</Link></li>
+              <li><Link to="/services/landlord-tenant">Landlord Legal Services</Link></li>
+              <li><Link to="/services/tenant-legal-assistance">Tenant Legal Assistance</Link></li>
               <li><Link to="/services/human-rights">Human Rights Tribunal</Link></li>
-              <li><Link to="/services/small-claims">Small Claims Court</Link></li>
-              <li><Link to="/services/judgment-enforcement">Judgment Enforcement</Link></li>
+              <li><Link to="/services/small-claims-enforcement">Small Claims & Enforcement</Link></li>
+              <li><Link to="/services/legal-research">Legal Research & Drafting</Link></li>
               <li><Link to="/services/notary">Notary & Commissioner</Link></li>
             </ul>
           </div>
@@ -80,9 +80,10 @@ export default function Footer() {
             <h4>Navigate</h4>
             <ul>
               <li><Link to="/about">About Heidi</Link></li>
-              <li><Link to="/services">All Services</Link></li>
-              <li><Link to="/pricing">Pricing & Fees</Link></li>
-              <li><Link to="/blog">Blog & Resources</Link></li>
+              <li><Link to="/services">Legal Services</Link></li>
+              <li><Link to="/paralegal-students">Paralegal Students</Link></li>
+              <li><Link to="/fees">Fees</Link></li>
+              <li><Link to="/resources">Resources</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/testimonials">Client Feedback</Link></li>
               <li><Link to="/contact">Contact</Link></li>
@@ -112,13 +113,13 @@ export default function Footer() {
               <div className="footer-contact-item">
                 <MapPinIcon />
                 <div>
-                  <span>Suite 528, 420 Main Street East</span>
-                  <span>Milton, Ontario L9T 5G3</span>
-                  <span>Ontario-wide virtual services; in-person by arrangement in Milton and New Liskeard / Temiskaming Shores</span>
+                  <span>Milton office / mailing address: Suite 528, 420 Main Street East, Milton, Ontario</span>
+                  <span>Northern Ontario office: New Liskeard / Temiskaming Shores — appointments by arrangement</span>
+                  <span>Serving clients across Ontario</span>
                 </div>
               </div>
             </div>
-            <Link to="/intake" className="btn-primary footer-btn">Request a Consultation</Link>
+            <Link to="/contact" className="btn-primary footer-btn">Request an Initial Consultation</Link>
           </div>
         </div>
       </div>
@@ -127,9 +128,18 @@ export default function Footer() {
       <div className="footer-disclaimer">
         <div className="container">
           <p>
-            Heidi Melville is a Licensed Paralegal regulated by the Law Society of Ontario.
-            The information on this website does not constitute legal advice and does not create a paralegal-client relationship.
-            No outcome is guaranteed. Results depend on individual circumstances.
+            Heidi Melville is a Licensed Paralegal, P15789 (Ontario), regulated by the Law Society of Ontario.
+            The information on this website is provided for general informational purposes only and does not constitute
+            legal advice. Submitting an inquiry or intake form does not create a paralegal-client relationship.
+            Representation begins only after Melville Paralegal Services agrees to act and confirms the engagement in
+            writing. Email, website forms and other electronic communications may not be completely secure — do not
+            send highly sensitive personal information, original documents or extensive confidential records unless
+            requested and an appropriate transmission method has been confirmed. No outcome is guaranteed. Results
+            depend on the evidence, applicable law, conduct of the parties and decisions of the court, tribunal or other
+            decision-maker.
+          </p>
+          <p style={{ marginTop: 10 }}>
+            The logo of the Law Society of Ontario is a trademark owned by the Law Society of Ontario.
           </p>
         </div>
       </div>
@@ -137,7 +147,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© {new Date().getFullYear()} Melville Paralegal Services. All rights reserved.</span>
-          <span>Licensed Paralegal · Law Society of Ontario</span>
+          <span>Heidi Melville, Licensed Paralegal · Law Society of Ontario</span>
         </div>
       </div>
     </footer>

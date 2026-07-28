@@ -10,9 +10,9 @@ const services = [
         <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
       </svg>
     ),
-    title: 'ODSP & CPP Disability',
+    title: 'Disability Benefits Appeals',
     tag: 'Primary Focus',
-    desc: 'Assistance with ODSP denials, internal reviews, CPP Disability applications, reconsiderations and appeals. Compassionate support for every step of the process.',
+    desc: 'ODSP internal reviews and Social Benefits Tribunal appeals, plus CPP Disability reconsiderations and Social Security Tribunal appeals.',
     featured: true,
   },
   {
@@ -22,9 +22,21 @@ const services = [
         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
       </svg>
     ),
-    title: 'Landlord & Tenant Board',
+    title: 'Landlord Legal Services',
     tag: 'Landlord Services',
-    desc: 'Rent arrears, tenancy breaches, LTB applications and hearings. Clear guidance for Ontario residential landlords navigating complex tenancy issues.',
+    desc: 'Legal assistance for landlords involving unpaid rent, tenancy breaches, termination notices, applications, hearings and selected post-order steps.',
+    featured: false,
+  },
+  {
+    slug: 'tenant-legal-assistance',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/>
+      </svg>
+    ),
+    title: 'Tenant Legal Assistance',
+    tag: 'Select Matters',
+    desc: 'Residential tenant matters considered selectively and on a case-by-case basis, including responses to landlord applications and selected T2 or T6 applications.',
     featured: false,
   },
   {
@@ -36,32 +48,31 @@ const services = [
     ),
     title: 'Human Rights Tribunal',
     tag: 'Select Matters',
-    desc: 'Assistance with select discrimination and accommodation matters under the Ontario Human Rights Code. Careful, strategic preparation of HRTO applications.',
+    desc: 'Selected assistance for applicants and respondents involving discrimination, harassment, accommodation, reprisal and Human Rights Tribunal proceedings.',
     featured: false,
   },
   {
-    slug: 'small-claims',
+    slug: 'small-claims-enforcement',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/>
       </svg>
     ),
-    title: 'Small Claims Court',
+    title: 'Small Claims & Enforcement',
     tag: 'Civil Matters',
-    desc: 'Unpaid accounts, contracts, property damage and consumer disputes. From demand letters through to trial representation within Small Claims jurisdiction.',
+    desc: 'Claims, defences, motions, settlement discussions, hearings, trials and selected post-judgment enforcement procedures.',
     featured: false,
   },
   {
-    slug: 'judgment-enforcement',
+    slug: 'legal-research',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <path d="M9 12l2 2 4-4"/>
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
       </svg>
     ),
-    title: 'Judgment Enforcement',
-    tag: 'Post-Judgment',
-    desc: 'A judgment is only the beginning. Assistance with enforcement planning, garnishments, writs of seizure and sale, and debtor examinations.',
+    title: 'Legal Research & Document Drafting',
+    tag: 'Document Services',
+    desc: 'Focused legal research, written advocacy and document preparation within the permitted scope of Ontario paralegal practice.',
     featured: false,
   },
   {
@@ -75,9 +86,9 @@ const services = [
         <polyline points="10 9 9 9 8 9"/>
       </svg>
     ),
-    title: 'Notary & Commissioner',
+    title: 'Notary & Commissioner for Taking Affidavits',
     tag: 'Document Services',
-    desc: 'Notarizing signatures, certifying copies, commissioning affidavits and statutory declarations. Mobile notary available; eligible documents commissioned remotely.',
+    desc: 'In-person notarization, mobile or agreed-location appointments, and eligible in-person or remote commissioning services.',
     featured: false,
   },
 ];
@@ -93,10 +104,10 @@ export default function ServicesSection() {
     <section className="services-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-label">What We Do</span>
-          <h2>Legal Services Tailored to Your Situation</h2>
+          <span className="section-label">Focused Legal Services</span>
+          <h2>Melville Paralegal Services Provides Focused Representation</h2>
           <div className="divider-line" />
-          <p>Every client deserves honest advice, careful preparation and a clear understanding of their options.</p>
+          <p>Limited-scope assistance in selected Ontario legal matters. Choose the service area that most closely matches your situation.</p>
         </div>
 
         <div className="services-grid">
@@ -119,7 +130,7 @@ export default function ServicesSection() {
 
         <div className="services-cta">
           <p>Not sure which service applies to your situation?</p>
-          <Link to="/intake" className="btn-primary">Request a Consultation</Link>
+          <Link to="/contact" className="btn-primary">Request a Consultation</Link>
         </div>
       </div>
     </section>

@@ -15,6 +15,12 @@
   margin-bottom: 16px;
 }
 
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .footer-logo-mark {
   width: 40px;
   height: 40px;
@@ -59,13 +65,13 @@
 }
 
 .footer-award {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.75rem;
-  color: var(--gold-accent);
-  opacity: 0.9;
   margin-bottom: 16px;
+}
+
+.footer-award-img {
+  height: 70px;
+  width: auto;
+  display: block;
 }
 
 .footer-lso-link {

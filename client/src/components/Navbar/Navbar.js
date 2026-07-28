@@ -25,10 +25,10 @@ const PhoneIcon = () => (
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Services', path: '/services' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'FAQ', path: '/faq' },
-  { label: 'Client Feedback', path: '/testimonials' },
+  { label: 'Legal Services', path: '/services' },
+  { label: 'Paralegal Students', path: '/paralegal-students' },
+  { label: 'Resources', path: '/resources' },
+  { label: 'Fees', path: '/fees' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -50,9 +50,9 @@ export default function Navbar() {
       <div className="nav-top-bar">
         <div className="container nav-top-inner">
           <span className="nav-top-text">
-            <PhoneIcon /> 289-981-7712 &nbsp;|&nbsp; Fax: 1-877-390-3946 &nbsp;|&nbsp; connect@melvilleparalegal.ca
+            <PhoneIcon /> Serving Clients Across Ontario &nbsp;|&nbsp; Meeting Locations in Milton and New Liskeard, Ontario &nbsp;|&nbsp; Disability Appeals: ODSP &amp; CPP-D &nbsp;|&nbsp; Flexible Evening and Weekend Appointments &nbsp;|&nbsp; Virtual Legal Appointments
           </span>
-          <Link to="/intake" className="nav-top-cta">Request a Consultation</Link>
+          <Link to="/contact" className="nav-top-cta">Request an Initial Consultation</Link>
         </div>
       </div>
       <nav className="nav-main">
@@ -74,7 +74,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <Link to="/intake" className="btn-primary nav-cta-btn">
+          <Link to="/contact" className="btn-primary nav-cta-btn">
             Request a Consultation
           </Link>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link to="/intake" className="mobile-cta">Request a Consultation</Link>
+            <Link to="/contact" className="mobile-cta">Request a Consultation</Link>
           </li>
         </ul>
       </div>

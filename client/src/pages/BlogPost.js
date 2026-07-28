@@ -39,7 +39,7 @@ export default function BlogPost() {
 
   if (loading) return <div style={{ padding: '160px 24px', textAlign: 'center', color: 'var(--charcoal-light)' }}>Loading...</div>;
 
-  if (!post) return <div style={{ padding: '160px 24px', textAlign: 'center' }}><h2>Article not found</h2><Link to="/blog" className="btn-primary" style={{ marginTop: 24, display: 'inline-flex' }}>Back to Blog</Link></div>;
+  if (!post) return <div style={{ padding: '160px 24px', textAlign: 'center' }}><h2>Article not found</h2><Link to="/resources" className="btn-primary" style={{ marginTop: 24, display: 'inline-flex' }}>Back to Resources</Link></div>;
 
   const formatDate = d => new Date(d).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -48,7 +48,7 @@ export default function BlogPost() {
       <PageHeader
         title={post.title}
         tag={post.category}
-        breadcrumb={[{ label: 'Blog', path: '/blog' }, { label: post.title }]}
+        breadcrumb={[{ label: 'Resources', path: '/resources' }, { label: post.title }]}
       />
 
       <section className="blog-post-section">
@@ -77,7 +77,7 @@ export default function BlogPost() {
             <div className="post-cta-inline">
               <h3>Have Questions About Your Situation?</h3>
               <p>Request a consultation to discuss your matter.</p>
-              <Link to="/intake" className="btn-primary">Request a Consultation</Link>
+              <Link to="/contact" className="btn-primary">Request a Consultation</Link>
             </div>
           </article>
 
@@ -85,7 +85,7 @@ export default function BlogPost() {
             <div className="sidebar-cta-card">
               <h3>Request a Consultation</h3>
               <p>Complete the intake form — no legal advice is given at this stage, just a clear conversation about your matter.</p>
-              <Link to="/intake" className="btn-primary sidebar-full-btn">Get Started</Link>
+              <Link to="/contact" className="btn-primary sidebar-full-btn">Get Started</Link>
             </div>
 
             <div className="sidebar-contact-card">

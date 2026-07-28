@@ -104,6 +104,33 @@
   gap: 20px;
 }
 
+.approach-list {
+  list-style: none;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.approach-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+.approach-list .value-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--plum-deep);
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
 .value-card {
   background: white;
   border-radius: var(--radius-md);

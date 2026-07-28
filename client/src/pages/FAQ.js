@@ -88,7 +88,7 @@ export default function FAQ() {
               </div>
               <h4>Have a Different Question?</h4>
               <p>Complete the intake form to request a consultation and discuss the general nature of your matter.</p>
-              <a href="/intake" className="btn-primary sidebar-btn">Request a Consultation</a>
+              <a href="/contact" className="btn-primary sidebar-btn">Request a Consultation</a>
             </div>
 
             <div className="faq-sidebar-contact">

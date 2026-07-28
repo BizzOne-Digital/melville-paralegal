@@ -1,0 +1,60 @@
+.focused-support-section {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.focused-support-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--plum-dark);
+  margin-bottom: 16px;
+}
+
+.focused-support-section > .container {
+  max-width: 780px;
+}
+
+.focused-support-section p {
+  color: var(--charcoal-light);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.focused-support-list {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  margin: 16px auto 0;
+}
+
+.focused-support-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.fees-preview-section {
+  padding: 80px 0;
+  background: var(--plum-pale);
+  text-align: center;
+}
+
+.fees-preview-section .container {
+  max-width: 720px;
+}
+
+.fees-preview-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--plum-dark);
+  margin-bottom: 16px;
+}
+
+.fees-preview-section p {
+  color: var(--charcoal-light);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}

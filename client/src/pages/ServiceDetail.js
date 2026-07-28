@@ -7,94 +7,127 @@ import './ServiceDetail.css';
 
 const fallbackServiceData = {
   'disability-benefits': {
-    title: 'ODSP & CPP Disability',
+    title: 'Disability Benefits Appeals: ODSP and CPP Disability',
     tag: 'Primary Focus',
-    subtitle: 'Compassionate, strategic assistance with Ontario and federal disability benefit processes.',
+    subtitle: 'Compassionate, Organized Advocacy When Disability Benefits Are Denied',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-    intro: 'Disability benefits exist to support people who cannot work due to illness or disability — but the application and appeal process can be complex, confusing and emotionally exhausting. Melville Paralegal Services provides practical assistance at every stage of the ODSP and CPP Disability processes.',
-    important: 'ODSP and CPP Disability are separate programs with different eligibility criteria, application processes and appeal bodies. Melville Paralegal Services clearly distinguishes both processes and explains which applies to your situation.',
+    intro: 'A disability-benefit denial can be difficult to understand, particularly when the applicant is already managing significant medical, functional and financial challenges. Disability-benefit appeals are a primary focus of Melville Paralegal Services. Heidi assists with selected Ontario Disability Support Program (ODSP) appeals and Canada Pension Plan Disability (CPP-D) reconsiderations and appeals.',
+    important: 'CPP-D and ODSP apply different legal tests, so the evidence and submissions must be tailored to the specific program and stage of appeal.',
     sections: [
       {
-        title: 'ODSP — Ontario Disability Support Program',
-        body: 'ODSP is a provincial income support program administered by the Ministry of Children, Community and Social Services. Eligibility requires meeting both financial and disability criteria. If your ODSP application is denied or cancelled, you have the right to request an internal review and, if unsuccessful, to appeal to the Social Benefits Tribunal.',
-        items: ['ODSP denials and cancellations', 'Internal review requests', 'Social Benefits Tribunal appeals', 'Reviewing the decision and medical records', 'Identifying gaps in the evidence', 'Organizing medical and functional evidence', 'Preparing written submissions', 'Hearing preparation and representation'],
+        title: 'ODSP Appeal Assistance',
+        items: ['Reviewing the ODSP denial decision and applicable deadlines', 'Preparing or reviewing the request for internal review', 'Reviewing the Disability Determination Package and reasons for denial', 'Organizing medical, functional and personal evidence', 'Identifying evidentiary gaps and additional supporting information', 'Preparing written submissions for the Social Benefits Tribunal', 'Preparing the appellant and witnesses for the hearing', 'Representation at a Social Benefits Tribunal hearing', 'Reviewing the Tribunal\'s decision and explaining available next steps'],
       },
       {
-        title: 'CPP Disability — Canada Pension Plan Disability',
-        body: 'CPP Disability is a federal disability benefit under the Canada Pension Plan, administered by Service Canada. To qualify, you must have made sufficient CPP contributions and have a disability that is both severe and prolonged. If denied, you may request a reconsideration and, if still denied, appeal to the Social Security Tribunal of Canada.',
-        items: ['CPP Disability applications', 'Reconsideration requests', 'Social Security Tribunal appeals', 'Reviewing medical records and functional reports', 'Organizing evidence and identifying gaps', 'Written submissions and hearing preparation', 'Representation at the General Division and Appeal Division'],
-      },
-    ],
-    disclaimer: 'No outcome is guaranteed. Results depend on the individual circumstances, the medical evidence, applicable eligibility criteria and the decision-maker. Melville Paralegal Services provides honest assessments and will not accept a file where there is no reasonable basis for the appeal.',
-  },
-  'landlord-tenant': {
-    title: 'Landlord & Tenant Board',
-    tag: 'Landlord Services',
-    subtitle: 'Practical LTB assistance for Ontario residential landlords.',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
-    intro: 'Dealing with a difficult tenancy can be stressful, time-consuming and costly. Melville Paralegal Services helps Ontario residential landlords understand their rights, prepare the right documents and navigate the Landlord and Tenant Board process.',
-    important: 'Melville Paralegal Services represents landlords in most LTB matters. Residential tenant matters may be accepted on a case-by-case basis.',
-    sections: [
-      {
-        title: 'Landlord Services at the LTB',
-        body: 'Melville Paralegal Services assists landlords with a range of residential tenancy matters before the Landlord and Tenant Board. The LTB process has specific procedural requirements. Proper preparation of notices and applications — and organized evidence — are essential to a well-presented case.',
-        items: ['Rent arrears and persistent late payment', 'Tenant conduct and disturbance', 'Property damage', 'Substantial interference with reasonable enjoyment', 'Unauthorized occupants', "Landlord's own use", 'Preparing and reviewing notices', 'Filing LTB applications', 'Evidence organization', 'Settlement discussions', 'Hearing preparation and representation'],
-      },
-      {
-        title: 'Residential Tenant Matters — Case-by-Case Review',
-        body: 'Residential tenant matters may be accepted on a case-by-case basis. Acceptance depends on the legal and procedural issues, available evidence, applicable deadlines, conflicts of interest, the stage of the proceeding, the services requested and Melville Paralegal Services’ capacity. Submitting an inquiry does not guarantee that the matter will be accepted.',
+        title: 'CPP Disability Appeal Assistance',
+        body: 'For CPP Disability matters, services may include reviewing the Service Canada decision, preparing or strengthening a request for reconsideration, organizing medical and employment evidence, preparing an appeal to the Social Security Tribunal, written submissions, hearing preparation and representation where retained. The evidence should explain why the medical conditions prevent the person from working regularly and how the limitations have affected work capacity over time.',
         items: [],
       },
+      {
+        title: 'Building the Medical, Functional and Work-Capacity Evidence',
+        items: ['Creating a medical, functional, employment and procedural chronology', 'Reviewing medical reports, treatment records and functional evidence', 'Identifying missing evidence, inconsistencies and changes in condition', 'Connecting the evidence to the applicable ODSP or CPP-D legal test', 'Preparing the appellant\'s testimony and written account', 'Explaining the tribunal process and preparing for questions in advance'],
+      },
     ],
-    disclaimer: 'Melville Paralegal Services represents landlords only in most LTB matters. Residential tenant matters may be accepted on a case-by-case basis. LTB processes and timelines are subject to change. Outcomes depend on individual facts and the evidence presented.',
+    disclaimer: 'No representative can guarantee that an ODSP or CPP Disability appeal will be allowed. Decisions are made by Service Canada, the Social Benefits Tribunal or the Social Security Tribunal based on the evidence and the applicable legal test.',
   },
-  'human-rights': {
-    title: 'Human Rights Tribunal of Ontario',
-    tag: 'Select Matters',
-    subtitle: 'Assistance with select discrimination and accommodation matters under the Ontario Human Rights Code.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
-    intro: 'The Ontario Human Rights Code protects people from discrimination in areas such as employment, housing and services based on protected grounds including disability, race, sex and other characteristics. Melville Paralegal Services accepts select human rights matters based on the issues, evidence and availability.',
-    important: 'Not all human rights matters fall within the permitted scope of paralegal practice. Melville Paralegal Services will clearly advise whether your matter can be assisted and, if not, help identify appropriate referrals.',
+  'landlord-tenant': {
+    title: 'Ontario Landlord Legal Services',
+    tag: 'Landlord Services',
+    subtitle: 'Practical Assistance for Landlords Navigating the LTB Process',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    intro: 'Ontario residential tenancy proceedings are document-driven and deadline-sensitive. Errors in a notice, application, service method or calculation can delay a proceeding or affect the relief requested. Melville Paralegal Services assists landlords with selected matters under the Residential Tenancies Act and before the Landlord and Tenant Board.',
+    important: 'The appropriate notice or application depends on the specific facts. A form should not be selected or served until the circumstances and available evidence have been reviewed.',
     sections: [
       {
-        title: 'HRTO — Select Matters',
-        body: 'Assistance is available with select discrimination and accommodation matters, including disability-related accommodation, housing discrimination and related issues. Each matter is assessed individually.',
-        items: ['Reviewing the circumstances and evidence', 'HRTO application preparation', 'Responding to HRTO applications', 'Organizing supporting evidence', 'Preparing written submissions', 'Mediation and settlement preparation', 'Hearing preparation and representation'],
+        title: 'Landlord Matters',
+        items: ['Rent arrears and persistent late payment', 'Notices of termination and landlord applications', 'Tenant interference, substantial interference or property damage', 'Unauthorized occupants or other tenancy breaches', "Landlord's own-use proceedings", 'Agreements to terminate a tenancy', 'Responses to selected tenant applications', 'LTB hearing preparation and representation', 'Review of LTB orders', 'Selected post-order or enforcement-related steps'],
+      },
+      {
+        title: 'Rent Arrears and Applications',
+        body: 'When rent is unpaid, accurate calculations and proper service are essential. Services may include reviewing the tenancy information, calculating arrears, preparing the appropriate notice or application, organizing the rent ledger and evidence, and preparing for mediation or hearing.',
+        items: [],
+      },
+      {
+        title: 'Tenant Conduct, Damage or Interference',
+        body: 'Not every concern supports immediate termination. Before proceeding, the facts should be examined to determine what occurred, when it occurred, who witnessed it, whether it is continuing, what prior warnings were given and what supporting records exist. Melville Paralegal Services can review the information, identify evidentiary gaps and assist with the appropriate procedural response.',
+        items: [],
+      },
+      {
+        title: 'LTB Hearing Representation',
+        items: ['Reviewing the notice, application and supporting documents', 'Preparing a chronology and organizing exhibits', 'Identifying relevant witnesses and preparing questions', 'Discussing settlement options', 'Preparing the client for testimony', 'Representation at the scheduled hearing'],
+      },
+    ],
+    disclaimer: 'A hearing date should be provided as early as possible. Acceptance is subject to availability, conflict checking, adequate preparation time and completion of the retainer requirements.',
+  },
+  'tenant-legal-assistance': {
+    title: 'Tenant Legal Assistance — Residential Tenant Matters Considered Case by Case',
+    tag: 'Select Matters',
+    subtitle: 'Residential Tenant Matters — Case-by-Case Review',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    intro: 'Melville Paralegal Services primarily represents landlords in residential tenancy proceedings. However, select residential tenant matters may be accepted on a case-by-case basis where the legal issues, available evidence, procedural stage, urgency, hearing requirements and current practice capacity make the matter suitable.',
+    important: 'Acceptance is not guaranteed. Every prospective tenant matter is subject to conflict checking, permitted paralegal scope, document and evidence review, available preparation time and a written retainer agreement.',
+    sections: [
+      {
+        title: 'Tenant Services May Include',
+        items: ['Reviewing a landlord application and identifying the issues requiring a response', 'Preparing a response and organizing supporting documents and evidence', 'Assisting with selected T2 or T6 applications involving tenant rights, maintenance or repair concerns', 'Preparing chronologies, exhibits and hearing materials', 'Preparing the tenant and witnesses for an LTB hearing', 'Representation before the Landlord and Tenant Board where retained'],
+      },
+    ],
+    disclaimer: 'Residential tenant matters may be accepted on a case-by-case basis. Acceptance depends on the legal and procedural issues, available evidence, applicable deadlines, conflicts of interest, the stage of the proceeding, the services requested and Melville Paralegal Services\' capacity. Submitting an inquiry does not guarantee that the matter will be accepted.',
+  },
+  'human-rights': {
+    title: 'Ontario Human Rights Tribunal Services',
+    tag: 'Select Matters',
+    subtitle: 'Respectful Advocacy in Discrimination and Harassment Matters',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
+    intro: 'Human rights matters can be deeply personal and emotionally difficult. Melville Paralegal Services provides compassionate, organized assistance in selected matters before the Human Rights Tribunal of Ontario (HRTO), subject to case assessment, scope of practice and availability. Heidi may assist applicants who believe they experienced discrimination or harassment and respondents who must answer an HRTO application.',
+    important: 'Human rights matters may involve strict limitation periods and procedural deadlines. Prospective clients should seek advice promptly and continue monitoring all existing deadlines unless Melville Paralegal Services confirms in writing that it has accepted the matter.',
+    sections: [
+      {
+        title: 'Selected Human Rights Services',
+        items: ['Reviewing the alleged discrimination, harassment, accommodation issue or reprisal', 'Assessing available documents, communications and witness evidence', 'Preparing or reviewing an HRTO application or response', 'Identifying procedural issues and evidentiary gaps', 'Preparing for mediation and settlement discussions', 'Disclosure, witness and hearing preparation', 'Responding to tribunal directions, requests and preliminary issues', 'Representation at selected HRTO mediations or hearings where retained'],
+      },
+      {
+        title: 'The Connection to a Code-Protected Ground',
+        body: 'Unfair or harmful treatment is not automatically discrimination under Ontario\'s Human Rights Code. The evidence must support a connection between the treatment and a protected ground in a social area covered by the Code. Careful fact review is therefore essential before an application or response is prepared.',
+        items: [],
+      },
+      {
+        title: 'Applicant and Respondent Representation',
+        body: 'Melville Paralegal Services may assist either applicants or respondents, but never opposing parties in the same or a related matter. Acceptance is subject to a conflict check, sufficient preparation time and a written retainer agreement.',
+        items: [],
       },
     ],
     disclaimer: 'HRTO matters are accepted on a selective basis. Acceptance depends on the issues, evidence, the scope of paralegal practice and availability. No outcome is guaranteed.',
   },
-  'small-claims': {
-    title: 'Small Claims Court',
+  'small-claims-enforcement': {
+    title: 'Ontario Small Claims Court and Judgment Enforcement Services',
     tag: 'Civil Matters',
-    subtitle: 'Assistance for individuals and small businesses with Small Claims Court matters in Ontario.',
+    subtitle: 'Claims, Defences, Resolution and Post-Judgment Enforcement',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
-    intro: "Small Claims Court in Ontario generally hears claims for money or personal property valued at up to $50,000, subject to the applicable law and rules. The process can be straightforward — but procedural missteps, missing deadlines or poorly organized evidence can undermine an otherwise strong case. Melville Paralegal Services helps individuals and small businesses present their matters clearly and effectively.",
-    important: 'Small Claims Court has specific procedural timelines and requirements. Early legal assistance helps avoid procedural errors that can affect the outcome of your claim.',
+    intro: 'Small Claims Court is intended to be more accessible than higher courts, but parties must still comply with procedural rules, limitation periods, evidence requirements and court orders. Melville Paralegal Services assists individuals and businesses with selected claims, defences and post-judgment enforcement steps within the permitted jurisdiction and paralegal scope of practice.',
+    important: 'Do not ignore a Small Claims Court claim. Failure to respond may permit the plaintiff to take steps to obtain judgment without your participation.',
     sections: [
       {
-        title: 'Small Claims Court Services',
-        body: 'Melville Paralegal Services assists with both claims and defences in Small Claims Court, from initial demand letters through to trial representation.',
-        items: ['Unpaid accounts and invoices', 'Contract disputes', 'Property damage', 'Consumer disputes', 'Demand letters', "Plaintiff's Claims", 'Defences', "Defendant's Claims", 'Settlement conferences', 'Motions and negotiations', 'Hearing preparation and trial representation'],
+        title: 'Types of Matters',
+        items: ['Unpaid invoices, loans and other debts', 'Breach of contract', 'Property damage', 'Consumer disputes', 'Claims involving services or workmanship', "Landlord-related claims outside the LTB's jurisdiction", 'Defence of Small Claims Court proceedings', 'Settlement conferences, motions and assessment hearings', 'Trials', 'Post-judgment enforcement'],
       },
-    ],
-    disclaimer: "As of October 1, 2025, Ontario's Small Claims Court generally hears claims for money or personal property valued at up to $50,000, subject to the applicable law and rules. Melville Paralegal Services cannot assist with matters outside the permitted scope of paralegal practice. No outcome is guaranteed.",
-  },
-  'judgment-enforcement': {
-    title: 'Judgment Enforcement',
-    tag: 'Post-Judgment',
-    subtitle: 'Helping Ontario judgment creditors take practical steps toward recovering what they are owed.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
-    intro: 'Winning a judgment is only the first step. A court order does not automatically result in payment — you must take enforcement steps to recover the money owed. Melville Paralegal Services assists judgment creditors with enforcement planning and legally available enforcement procedures.',
-    important: 'Recovery cannot be guaranteed and depends on the debtor\'s income, assets and financial circumstances. Melville Paralegal Services provides an honest assessment of enforcement options and realistic expectations before proceeding.',
-    sections: [
+      {
+        title: 'Starting or Defending a Claim',
+        body: 'Starting a claim may include reviewing the evidence, identifying the proposed defendant, considering limitation-period issues, preparing a demand letter or Plaintiff\'s Claim, organizing supporting documents, arranging filing and service, and preparing for later stages where retained. A defendant generally has a limited period in which to respond after service. Defence services may include reviewing the Plaintiff\'s Claim, assessing possible defences, preparing the Defence, considering a Defendant\'s Claim and preparing for conferences, motions or trial.',
+        items: [],
+      },
+      {
+        title: 'Settlement and Resolution',
+        body: 'Settlement may reduce cost, delay and uncertainty. Melville Paralegal Services can assist with settlement proposals, offers to settle, payment arrangements, minutes of settlement, consent documents and preparation for settlement conferences.',
+        items: [],
+      },
       {
         title: 'Judgment Enforcement Services',
-        body: 'Melville Paralegal Services assists with planning and pursuing legally available enforcement procedures after a Small Claims Court or other civil judgment.',
-        items: ['Enforcement planning', 'Payment demands', 'Debtor examinations (examination in aid of execution)', 'Wage garnishments', 'Bank account garnishments', 'Writs of seizure and sale', 'Credit bureau reporting where applicable', 'Enforcement correspondence'],
+        body: 'A judgment confirms the debt — it does not automatically produce payment. When a judgment debtor does not pay voluntarily, the creditor may need to use court-authorized enforcement procedures.',
+        items: ['Written demands for payment', 'Negotiated payment arrangements', 'Debtor examinations and requests for financial disclosure', 'Garnishment proceedings', 'Writs of seizure and sale', 'Available searches and third-party reports', 'Renewal or maintenance of enforcement documents', 'Court attendances relating to enforcement'],
       },
     ],
-    disclaimer: 'Recovery depends entirely on the debtor\'s income, assets and financial circumstances. Not all judgments are collectible. Melville Paralegal Services provides honest assessments and will not pursue enforcement that is unlikely to result in any recovery.',
+    disclaimer: 'The availability of an enforcement procedure does not guarantee recovery. A debtor may have limited income, exempt assets, competing creditors or no identifiable assets. A legally valid claim does not necessarily mean that recovery will be practical or financially worthwhile.',
   },
   'legal-research': {
     title: 'Legal Research & Document Drafting',
@@ -113,25 +146,33 @@ const fallbackServiceData = {
     disclaimer: 'Limited-scope legal research, document review or drafting does not include continuing representation, filing, service, negotiations or hearing attendance unless expressly included in a written agreement. The services included, any legal advice provided and the limits of the engagement will be confirmed in writing. Melville Paralegal Services can only draft documents within the permitted scope of Ontario paralegal practice.',
   },
   'notary': {
-    title: 'Notary Public & Commissioner for Taking Affidavits',
+    title: 'Notary Public and Commissioner for Taking Affidavits Services',
     tag: 'Notarial Services',
-    subtitle: 'In-person and mobile notary services, and remote commissioning where Ontario regulations permit.',
+    subtitle: 'In-Person Notarization and Convenient Commissioning Services',
     image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&q=80',
-    intro: 'Many legal, financial and government documents require notarization or commissioning by an authorized person. Heidi Melville is both a Notary Public and Commissioner for Taking Affidavits, and is available in person and by mobile appointment.',
-    important: 'Ontario currently does not authorize online notarization. Notarization requires an in-person meeting. Eligible documents may be commissioned remotely by video appointment when Ontario Regulation 431/20 requirements are met. Clients should confirm that the receiving organization will accept a remotely commissioned document before booking a remote appointment.',
+    intro: 'Melville Paralegal Services provides appointment-based Notary Public and Commissioner for Taking Affidavits services. Notarial acts are completed in person. Heidi can travel to the client or meet at an agreed location. Eligible affidavits and declarations may be commissioned remotely when the document, recipient requirements and circumstances permit and all legal and professional conditions can be satisfied.',
+    important: 'Ontario does not currently permit a notary public to perform notarial acts without the person being physically present. Services such as certifying a true copy, witnessing or attesting the execution of a document, or notarizing a signature must therefore be completed during an in-person appointment.',
     sections: [
       {
-        title: 'Notary Public Services',
-        body: 'Notarization must be completed in person. Heidi can meet clients at an agreed location or travel to them by appointment. Travel charges may apply.',
-        items: ['Notarizing signatures', 'Certified true copies', 'Consent-to-travel documents', 'Invitation letters', 'Other documents requiring a notary public', 'Mobile notary (travel to client or agreed location)', 'Serving Milton and New Liskeard / Temiskaming Shores'],
+        title: 'Heidi Will Come to You — or Meet You',
+        body: 'Mobile notary appointments may be available at a home, hospital, care facility, workplace or another agreed location, subject to availability, travel distance, accessibility, safety and any facility requirements. A mutually convenient meeting location may also be arranged.',
+        items: [],
       },
       {
-        title: 'Commissioner for Taking Affidavits Services',
-        body: 'Eligible documents may be commissioned remotely by video appointment where Ontario Regulation 431/20 requirements are met.',
-        items: ['Commissioning affidavits', 'Statutory declarations', 'Oaths and affirmations', 'Remote commissioning by video (where eligible)', 'In-person commissioning available'],
+        title: 'Remote Commissioning May Be Available',
+        body: 'Ontario permits oaths and declarations to be administered remotely when the statutory conditions in O. Reg. 431/20 are met. Suitable affidavits or declarations may be commissioned by real-time video appointment, provided identity, communication, document handling, signing and record requirements can be satisfied. The receiving organization may impose additional requirements or may decline a remotely commissioned document.',
+        items: [],
+      },
+      {
+        title: 'Available Services',
+        items: ['Commissioning affidavits and statutory declarations, in person or remotely where eligible', 'Administering oaths or affirmations', 'Witnessing, certifying and attesting signatures or document execution in person', 'Certifying true copies of original documents in person', 'Consent-to-travel documents and declarations', 'Invitation letters and supporting declarations', 'Proof-of-identity and document-verification services', 'Pension, benefit and administrative declarations'],
+      },
+      {
+        title: 'What to Bring',
+        items: ['The complete document', 'Valid, current government-issued identification', 'Instructions provided by the receiving organization', 'All persons who must sign', 'Any required witnesses', 'The original document where a certified true copy or other notarial act is required'],
       },
     ],
-    disclaimer: 'Ontario currently does not permit online notarization. Remote commissioning is subject to specific regulatory requirements. Not all organizations accept remotely commissioned documents — clients should confirm acceptance before booking.',
+    disclaimer: 'Clients are responsible for confirming the receiving organization\'s requirements, including whether remote commissioning is accepted, whether witnesses are required and whether authentication or an apostille is needed after notarization. Melville Paralegal Services does not guarantee acceptance by a receiving organization, foreign authority or third party.',
   },
 };
 
@@ -223,7 +264,7 @@ export default function ServiceDetail() {
             <div className="sidebar-cta-card">
               <h3>Ready to Discuss Your Matter?</h3>
               <p>Request a consultation to determine whether Melville Paralegal Services may be able to assist.</p>
-              <Link to="/intake" className="btn-primary sidebar-full-btn">Request a Consultation</Link>
+              <Link to="/contact" className="btn-primary sidebar-full-btn">Request a Consultation</Link>
               <div className="sidebar-divider" />
               <div className="sidebar-contact">
                 <p><strong>Call or Text</strong></p>

@@ -148,6 +148,28 @@
   justify-content: center;
 }
 
+.intake-consent {
+  background: var(--warm-white);
+  border: 1px solid var(--taupe-light);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  font-size: 0.78rem;
+  color: var(--charcoal-light);
+  line-height: 1.65;
+}
+
+.intake-consent .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.intake-consent .checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
 .form-success {
   display: flex;
   align-items: center;

@@ -64,7 +64,7 @@ export default function Blog() {
           ) : (
             <div className="blog-grid">
               {filtered.map((post, i) => (
-                <Link key={post._id || i} to={`/blog/${post.slug}`} className="blog-card">
+                <Link key={post._id || i} to={`/resources/${post.slug}`} className="blog-card">
                   {post.image && (
                     <div className="blog-card-img">
                       <img src={post.image} alt={post.title} />

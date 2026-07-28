@@ -8,59 +8,59 @@ import './Services.css';
 const fallbackServices = [
   {
     slug: 'disability-benefits',
-    title: 'ODSP & CPP Disability',
+    title: 'Disability Benefits Appeals',
     tag: 'Primary Focus',
     featured: true,
-    summary: 'Assistance with ODSP denials, internal reviews, Social Benefits Tribunal appeals, and CPP Disability applications, reconsiderations and appeals to the Social Security Tribunal.',
-    highlights: ['ODSP denials & internal reviews', 'Social Benefits Tribunal', 'CPP Disability applications', 'CPP Disability reconsiderations & appeals', 'Evidence organization & gaps analysis', 'Written submissions & hearing preparation'],
+    summary: 'Primary focus: ODSP internal reviews and Social Benefits Tribunal appeals, plus CPP Disability reconsiderations and Social Security Tribunal appeals.',
+    highlights: ['ODSP internal reviews', 'Social Benefits Tribunal appeals', 'CPP Disability reconsiderations', 'Social Security Tribunal appeals', 'Evidence organization & gaps analysis', 'Written submissions & hearing preparation'],
   },
   {
     slug: 'landlord-tenant',
-    title: 'Landlord & Tenant Board',
+    title: 'Landlord Legal Services',
     tag: 'Landlord Services',
     featured: false,
-    summary: 'Assistance for Ontario residential landlords dealing with rent arrears, persistent late payment, tenant conduct, property damage, substantial interference and other LTB matters.',
-    highlights: ['Rent arrears & late payment', 'LTB notices & applications', 'Evidence organization & hearings', 'Settlement discussions', 'Unauthorized occupants', 'Landlord\'s own use applications'],
+    summary: 'Legal assistance for landlords involving unpaid rent, tenancy breaches, termination notices, applications, hearings and selected post-order steps.',
+    highlights: ['Rent arrears & persistent late payment', 'Notices of termination & applications', 'Tenant interference & property damage', "Landlord's own-use proceedings", 'LTB hearing preparation & representation', 'Selected post-order steps'],
+  },
+  {
+    slug: 'tenant-legal-assistance',
+    title: 'Tenant Legal Assistance — Select Matters',
+    tag: 'Select Matters',
+    featured: false,
+    summary: 'Residential tenant matters are considered selectively and on a case-by-case basis. Melville Paralegal Services may assist with reviewing landlord applications, preparing a response, selected T2 or T6 applications, organizing evidence, hearing preparation and representation before the Landlord and Tenant Board.',
+    highlights: ['Reviewing landlord applications', 'Preparing a response', 'Selected T2 or T6 applications', 'Organizing evidence', 'Hearing preparation', 'LTB representation where retained'],
   },
   {
     slug: 'human-rights',
     title: 'Human Rights Tribunal',
     tag: 'Select Matters',
     featured: false,
-    summary: 'Assistance with select discrimination and accommodation matters under the Ontario Human Rights Code, including HRTO applications, mediation and hearing preparation.',
-    highlights: ['HRTO applications & responses', 'Disability accommodation matters', 'Written submissions', 'Mediation preparation', 'Hearing preparation', 'Evidence organization'],
+    summary: 'Selected assistance for applicants and respondents involving discrimination, harassment, accommodation, reprisal and Human Rights Tribunal proceedings.',
+    highlights: ['HRTO applications & responses', 'Discrimination & accommodation matters', 'Mediation & settlement discussions', 'Disclosure & hearing preparation', 'Evidence organization', 'Selected hearing representation'],
   },
   {
-    slug: 'small-claims',
-    title: 'Small Claims Court',
+    slug: 'small-claims-enforcement',
+    title: 'Small Claims Court & Judgment Enforcement',
     tag: 'Civil Matters',
     featured: false,
-    summary: 'Assistance for individuals and small businesses with claims and defences involving unpaid accounts, contracts, property damage and other Small Claims matters.',
-    highlights: ["Demand letters", "Plaintiff's Claims & Defences", 'Settlement conferences', 'Motions & negotiations', 'Trial representation', 'Defendant\'s Claims'],
-  },
-  {
-    slug: 'judgment-enforcement',
-    title: 'Judgment Enforcement',
-    tag: 'Post-Judgment',
-    featured: false,
-    summary: 'A court judgment does not automatically result in payment. Melville Paralegal Services assists judgment creditors with enforcement planning and legally available enforcement procedures.',
-    highlights: ['Enforcement planning', 'Payment demands', 'Debtor examinations', 'Garnishments', 'Writs of seizure & sale', 'Credit bureau reporting'],
+    summary: 'Claims, defences, motions, settlement discussions, hearings, trials and selected post-judgment enforcement procedures.',
+    highlights: ['Demand letters & Plaintiff\'s Claims', 'Defences & Defendant\'s Claims', 'Settlement conferences & motions', 'Trial representation', 'Debtor examinations & garnishments', 'Writs of seizure and sale'],
   },
   {
     slug: 'legal-research',
-    title: 'Legal Research & Drafting',
+    title: 'Legal Research & Document Drafting',
     tag: 'Document Services',
     featured: false,
-    summary: 'Focused legal research and drafting within the permitted scope of Ontario paralegal practice, including memoranda, submissions, correspondence and court documents.',
-    highlights: ['Legal research memoranda', 'Written opinions', 'Demand & cease-and-desist letters', 'Affidavits & statutory declarations', 'Settlement proposals', 'Hearing briefs & submissions'],
+    summary: 'Focused legal research, written advocacy and document preparation within the permitted scope of Ontario paralegal practice.',
+    highlights: ['Legal research memoranda', 'Written submissions & hearing briefs', 'Factums', 'Demand & procedural correspondence', 'Affidavits & statutory declarations', 'Court and tribunal documents'],
   },
   {
     slug: 'notary',
-    title: 'Notary Public & Commissioner',
+    title: 'Notary Public & Commissioner for Taking Affidavits',
     tag: 'Notarial Services',
     featured: false,
-    summary: 'In-person notarization and mobile notary services, as well as remote commissioning of affidavits and statutory declarations where Ontario Regulation 431/20 requirements are met.',
-    highlights: ['Signature notarization', 'Certified true copies', 'Consent-to-travel documents', 'Commissioning of affidavits', 'Statutory declarations', 'Remote commissioning available'],
+    summary: 'In-person notarization, mobile or agreed-location appointments, and eligible in-person or remote commissioning services.',
+    highlights: ['Signature notarization', 'Certified true copies', 'Consent-to-travel documents', 'Commissioning of affidavits', 'Statutory declarations', 'Eligible remote commissioning'],
   },
 ];
 
@@ -88,9 +88,9 @@ export default function Services() {
   return (
     <div className="services-page">
       <PageHeader
-        title="Legal Services"
-        subtitle="Melville Paralegal Services provides practical, compassionate legal assistance across a range of Ontario matters. No outcome is guaranteed — but you will always have clear, honest guidance."
-        breadcrumb={[{ label: 'Services' }]}
+        title="Focused Legal Services"
+        subtitle="Melville Paralegal Services provides focused representation and limited-scope assistance in selected Ontario legal matters. Choose the service area that most closely matches your situation."
+        breadcrumb={[{ label: 'Legal Services' }]}
       />
 
       <section className="services-list-section">
@@ -99,7 +99,7 @@ export default function Services() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
               <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
             </svg>
-            <p>ODSP and CPP Disability matters are the primary focus of this practice. All services are subject to availability, conflict checking and scope of Ontario paralegal regulation.</p>
+            <p>Every matter is assessed individually. Acceptance is subject to conflict checking, paralegal scope of practice, availability, deadlines, adequate preparation time and completion of the required retainer process.</p>
           </div>
 
           <div className="services-full-list">
@@ -130,7 +130,7 @@ export default function Services() {
           <div className="services-intake-note">
             <h3>Not Sure Where You Fit?</h3>
             <p>Request a consultation. Melville Paralegal Services will review the general nature of your matter and let you know whether it may be able to help.</p>
-            <Link to="/intake" className="btn-primary">Request a Consultation</Link>
+            <Link to="/contact" className="btn-primary">Request a Consultation</Link>
           </div>
         </div>
       </section>

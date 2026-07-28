@@ -14,7 +14,7 @@ const accessOptions = [
     ),
     desc: 'Complete the Prospective Client Intake Form to request a consultation to discuss the general nature of your matter and whether Melville Paralegal Services may be able to assist. Submitting the form does not guarantee that a consultation will be offered and does not create a paralegal-client relationship.',
     cta: 'Request a Consultation',
-    ctaLink: '/intake',
+    ctaLink: '/contact',
     highlight: true,
   },
   {
@@ -56,9 +56,9 @@ export default function Pricing() {
   return (
     <div className="pricing-page">
       <PageHeader
-        title="Fees & Pricing"
-        subtitle="Melville Paralegal Services provides professional legal services with transparent, clearly explained fees. A written quote or pricing guide is provided before any work begins."
-        breadcrumb={[{ label: 'Pricing' }]}
+        title="Clear Fees and Defined Services"
+        subtitle="Melville Paralegal Services offers flat-fee, stage-based, limited-scope and customized service options where appropriate."
+        breadcrumb={[{ label: 'Fees' }]}
       />
 
       <section className="pricing-section">
@@ -89,6 +89,23 @@ export default function Pricing() {
           </div>
 
           <div className="pricing-principles">
+            <h3>What the Written Fee Confirmation Should Explain</h3>
+            <ul style={{ maxWidth: 720, margin: '0 auto 40px', color: 'var(--charcoal-light)', lineHeight: 1.9, listStyle: 'disc', paddingLeft: 20 }}>
+              <li>The professional services included</li>
+              <li>The professional fee and applicable HST</li>
+              <li>Required advance payment or payment milestones</li>
+              <li>Government and court filing fees</li>
+              <li>Process-server, search, report and third-party charges</li>
+              <li>Travel or attendance expenses</li>
+              <li>Services excluded from the fee</li>
+              <li>The cost or approval process for additional work</li>
+            </ul>
+            <p style={{ maxWidth: 720, margin: '0 auto 40px', color: 'var(--charcoal-light)', lineHeight: 1.8, textAlign: 'center' }}>
+              Unless expressly included in writing, professional fees do not include court or tribunal filing fees, sheriff or
+              enforcement fees, process-server fees, searches, third-party reports, medical or expert reports, transcripts,
+              external courier charges, travel outside the agreed service area or other disbursements. No additional legal
+              work will be performed without authorization where a revised fee or expanded scope is required.
+            </p>
             <h3>What to Expect from Our Fees</h3>
             <div className="principles-grid">
               {[
@@ -126,6 +143,22 @@ export default function Pricing() {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="pricing-principles" style={{ marginTop: 40 }}>
+            <h3>Consultation Fee Credit</h3>
+            <p style={{ maxWidth: 720, margin: '0 auto 24px', color: 'var(--charcoal-light)', lineHeight: 1.8, textAlign: 'center' }}>
+              Where Melville Paralegal Services is retained for the same matter following a paid consultation, the
+              consultation fee will be applied as a credit toward the professional fees payable under the written
+              retainer. The credit does not apply to HST, court or tribunal filing fees, disbursements, travel charges or
+              other third-party costs. The credit and its application will be confirmed in writing.
+            </p>
+            <h3>Payment and Retainer Notice</h3>
+            <p style={{ maxWidth: 720, margin: '0 auto', color: 'var(--charcoal-light)', lineHeight: 1.8, textAlign: 'center' }}>
+              Depending on the service, payment may be required before work begins or according to written payment
+              milestones. Payment does not create a paralegal-client relationship unless Melville Paralegal Services has
+              completed the conflict check, confirmed acceptance, completed required identification procedures and
+              issued a written retainer agreement or other written confirmation of engagement.
+            </p>
           </div>
         </div>
       </section>

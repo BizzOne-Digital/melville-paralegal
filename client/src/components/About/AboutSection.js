@@ -9,10 +9,10 @@ const stats = [
 ];
 
 const values = [
-  { label: 'Compassion', desc: 'Melville Paralegal Services aims to provide respectful, patient and client-centred service.' },
-  { label: 'Clarity', desc: 'Plain-language explanations of the process, scope and options.' },
-  { label: 'Strategy', desc: 'Practical preparation based on facts, evidence and process.' },
-  { label: 'Confidence', desc: 'Melville Paralegal Services provides clear information about the agreed scope, process, fees and next procedural steps.' },
+  { label: 'Compassionate Service', desc: 'Legal problems often arise during stressful periods. Clients are treated with kindness, patience, dignity and respect.' },
+  { label: 'Intelligent Analysis', desc: 'Legal issues, evidence and procedural options are reviewed carefully and explained in clear language.' },
+  { label: 'Careful Preparation', desc: 'Documents, evidence, deadlines and procedural requirements are organized before the matter moves forward.' },
+  { label: 'Transparent Fees', desc: 'The scope of work, professional fees, applicable taxes and anticipated additional costs are confirmed in writing.' },
 ];
 
 export default function AboutSection({ aboutImage }) {
@@ -39,14 +39,14 @@ export default function AboutSection({ aboutImage }) {
         </div>
 
         <div className="about-content">
-          <span className="section-label">About Melville Paralegal Services</span>
-          <h2>Legal Services That Are Clear, Practical and Personal</h2>
+          <span className="section-label">Why Clients Choose Melville Paralegal Services</span>
+          <h2>Meet Heidi Melville</h2>
           <div className="divider-line" style={{ margin: '16px 0' }} />
           <p className="about-intro">
-            I created Melville Paralegal Services to offer legal help that puts people first. Legal problems can be stressful and overwhelming — especially when someone is already dealing with illness, disability, financial pressure or conflict.
+            Heidi Melville is the Principal Paralegal and owner of Melville Paralegal Services. She provides compassionate, practical and well-prepared legal assistance, with a primary focus on ODSP and CPP Disability matters, together with landlord representation, select residential tenant matters, human rights, Small Claims Court, legal research, document drafting and document services.
           </p>
           <p className="about-body">
-            My goal is to make the process easier to understand and to ensure that clients feel heard, respected and supported. I take the time to listen, explain the process in plain language and develop a practical strategy based on the facts and evidence.
+            Heidi recognizes that legal problems often arise during stressful and uncertain periods. Her goal is to ensure that clients feel heard, understand their options and are supported throughout the process, while receiving honest, intelligent and well-prepared legal representation.
           </p>
 
           <div className="about-values">
@@ -74,7 +74,7 @@ export default function AboutSection({ aboutImage }) {
             </div>
           </div>
 
-          <Link to="/about" className="btn-primary">Meet Heidi</Link>
+          <Link to="/about" className="btn-primary">Learn More About Heidi</Link>
         </div>
       </div>
     </section>
