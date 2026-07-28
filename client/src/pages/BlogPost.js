@@ -19,9 +19,9 @@ const fallbackPost = {
     <h2>What Evidence Matters</h2>
     <p>The strength of your medical and functional evidence is critical to both the internal review and the SBT appeal. This includes documentation from physicians, specialists, psychologists and other regulated health professionals that directly addresses the ODSP disability criteria.</p>
     <p>Common gaps in ODSP applications include a lack of functional information — how the disability affects your daily activities and ability to work — and incomplete or outdated medical documentation.</p>
-    <h2>How MPS Can Help</h2>
+    <h2>How Melville Paralegal Services Can Help</h2>
     <p>Melville Paralegal Services assists with ODSP internal reviews and Social Benefits Tribunal appeals. Services include reviewing the decision, identifying gaps in the evidence, organizing supporting documentation, preparing written submissions and representing clients at SBT hearings.</p>
-    <p>Book a complimentary intake meeting to discuss your situation.</p>
+    <p>Request a consultation to discuss your situation.</p>
   `,
 };
 
@@ -76,15 +76,15 @@ export default function BlogPost() {
 
             <div className="post-cta-inline">
               <h3>Have Questions About Your Situation?</h3>
-              <p>Book a complimentary virtual intake meeting to discuss your matter.</p>
-              <Link to="/intake" className="btn-primary">Book Free Meeting</Link>
+              <p>Request a consultation to discuss your matter.</p>
+              <Link to="/intake" className="btn-primary">Request a Consultation</Link>
             </div>
           </article>
 
           <aside className="blog-post-sidebar">
             <div className="sidebar-cta-card">
-              <h3>Book a Free Intake Meeting</h3>
-              <p>Discuss your matter with Heidi — no obligation, no legal advice, just a clear conversation.</p>
+              <h3>Request a Consultation</h3>
+              <p>Complete the intake form — no legal advice is given at this stage, just a clear conversation about your matter.</p>
               <Link to="/intake" className="btn-primary sidebar-full-btn">Get Started</Link>
             </div>
 

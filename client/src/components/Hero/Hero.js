@@ -71,7 +71,7 @@ export default function Hero() {
         <div className={`hero-content${visible ? ' visible' : ''}`}>
           <span className="hero-eyebrow">
             <span className="eyebrow-dot" />
-            CommunityVotes Milton 2026 — Platinum Winner
+            CommunityVotes Milton 2026 Platinum Winner — Paralegals category
           </span>
 
           <h1 className="hero-headline">
@@ -94,7 +94,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <Link to="/intake" className="btn-primary hero-btn-main">
-              Book Free Consultation <ArrowIcon />
+              Request a Consultation <ArrowIcon />
             </Link>
             <Link to="/services" className="btn-secondary">
               View Services

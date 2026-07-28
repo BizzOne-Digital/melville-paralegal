@@ -58,29 +58,6 @@
   max-width: 280px;
 }
 
-.footer-social {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.social-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.6);
-  transition: all 0.2s;
-}
-
-.social-icon:hover {
-  background: var(--plum-mid);
-  color: white;
-}
-
 .footer-award {
   display: flex;
   align-items: center;
@@ -88,6 +65,17 @@
   font-size: 0.75rem;
   color: var(--gold-accent);
   opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.footer-lso-link {
+  display: inline-block;
+}
+
+.lso-footer-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .footer-col h4 {

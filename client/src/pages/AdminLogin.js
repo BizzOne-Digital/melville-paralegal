@@ -37,7 +37,7 @@ export default function AdminLogin() {
         </div>
 
         <h2>Sign In</h2>
-        <p className="admin-login-sub">Access the MPS admin dashboard</p>
+        <p className="admin-login-sub">Access the Melville Paralegal Services admin dashboard</p>
 
         {error && <div className="admin-error">{error}</div>}
 

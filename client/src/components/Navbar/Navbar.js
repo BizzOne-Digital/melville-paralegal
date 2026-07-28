@@ -28,7 +28,7 @@ const navLinks = [
   { label: 'Services', path: '/services' },
   { label: 'Blog', path: '/blog' },
   { label: 'FAQ', path: '/faq' },
-  { label: 'Testimonials', path: '/testimonials' },
+  { label: 'Client Feedback', path: '/testimonials' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -50,9 +50,9 @@ export default function Navbar() {
       <div className="nav-top-bar">
         <div className="container nav-top-inner">
           <span className="nav-top-text">
-            <PhoneIcon /> 289-981-7712 &nbsp;|&nbsp; Toll-Free: 1-877-390-3946 &nbsp;|&nbsp; connect@melvilleparalegal.ca
+            <PhoneIcon /> 289-981-7712 &nbsp;|&nbsp; Fax: 1-877-390-3946 &nbsp;|&nbsp; connect@melvilleparalegal.ca
           </span>
-          <Link to="/intake" className="nav-top-cta">Book Free Consultation</Link>
+          <Link to="/intake" className="nav-top-cta">Request a Consultation</Link>
         </div>
       </div>
       <nav className="nav-main">
@@ -75,7 +75,7 @@ export default function Navbar() {
           </ul>
 
           <Link to="/intake" className="btn-primary nav-cta-btn">
-            Free Consultation
+            Request a Consultation
           </Link>
 
           <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -98,7 +98,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link to="/intake" className="mobile-cta">Book Free Consultation</Link>
+            <Link to="/intake" className="mobile-cta">Request a Consultation</Link>
           </li>
         </ul>
       </div>

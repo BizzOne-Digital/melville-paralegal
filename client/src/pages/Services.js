@@ -43,7 +43,7 @@ const fallbackServices = [
     title: 'Judgment Enforcement',
     tag: 'Post-Judgment',
     featured: false,
-    summary: 'A court judgment does not automatically result in payment. MPS assists judgment creditors with enforcement planning and legally available enforcement procedures.',
+    summary: 'A court judgment does not automatically result in payment. Melville Paralegal Services assists judgment creditors with enforcement planning and legally available enforcement procedures.',
     highlights: ['Enforcement planning', 'Payment demands', 'Debtor examinations', 'Garnishments', 'Writs of seizure & sale', 'Credit bureau reporting'],
   },
   {
@@ -129,8 +129,8 @@ export default function Services() {
 
           <div className="services-intake-note">
             <h3>Not Sure Where You Fit?</h3>
-            <p>Book a complimentary virtual intake meeting. Heidi will briefly discuss the general nature of your matter and let you know whether MPS may be able to help — before any commitment is required.</p>
-            <Link to="/intake" className="btn-primary">Book Free Meeting</Link>
+            <p>Request a consultation. Melville Paralegal Services will review the general nature of your matter and let you know whether it may be able to help.</p>
+            <Link to="/intake" className="btn-primary">Request a Consultation</Link>
           </div>
         </div>
       </section>

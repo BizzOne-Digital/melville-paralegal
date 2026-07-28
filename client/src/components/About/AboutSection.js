@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import './AboutSection.css';
 
 const stats = [
-  { number: 'LSO', label: 'Regulated Paralegal' },
-  { number: '3', label: 'Service Locations' },
+  { number: 'LSO', label: 'Licensed Paralegal' },
+  { number: 'ON', label: 'Ontario-Wide Virtual Services' },
   { number: '2026', label: 'Platinum Award Winner' },
 ];
 
 const values = [
-  { label: 'Compassion', desc: 'Every client is treated with dignity, patience and genuine care.' },
-  { label: 'Clarity', desc: 'Plain language explanations — no legal jargon, no confusion.' },
+  { label: 'Compassion', desc: 'Melville Paralegal Services aims to provide respectful, patient and client-centred service.' },
+  { label: 'Clarity', desc: 'Plain-language explanations of the process, scope and options.' },
   { label: 'Strategy', desc: 'Practical preparation based on facts, evidence and process.' },
-  { label: 'Confidence', desc: 'You will always know where you stand and what comes next.' },
+  { label: 'Confidence', desc: 'Melville Paralegal Services provides clear information about the agreed scope, process, fees and next procedural steps.' },
 ];
 
 export default function AboutSection({ aboutImage }) {

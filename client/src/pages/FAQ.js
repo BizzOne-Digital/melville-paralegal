@@ -8,24 +8,24 @@ const faqs = [
     cat: 'General',
     items: [
       { q: 'What is a licensed paralegal?', a: 'A Licensed Paralegal is a regulated legal professional authorized by the Law Society of Ontario to provide legal services in specific areas, including tribunal proceedings, Small Claims Court and summary conviction offences. Heidi Melville is a Licensed Paralegal regulated by the Law Society of Ontario.' },
-      { q: 'How is a paralegal different from a lawyer?', a: 'Lawyers can practise in all areas of law. Licensed paralegals in Ontario are authorized to provide legal services within specific permitted areas. For matters within a paralegal\'s permitted scope, the quality of service and legal skills are held to a professional regulatory standard.' },
-      { q: 'Are your fees transparent?', a: 'Yes. Fees are explained clearly before a retainer is signed. A written quote or current pricing guide is provided before services begin. Government fees, filing fees, service fees and other third-party costs are separate from professional fees and are explained as they arise.' },
-      { q: 'Can you guarantee an outcome?', a: 'No. No outcome in legal proceedings can be guaranteed. MPS provides careful preparation, honest advice and strategic representation — but results depend on the facts, evidence, applicable law and the decision-maker.' },
+      { q: 'How is a paralegal different from a lawyer?', a: 'Lawyers are authorized to provide a broader range of legal services. Licensed paralegals independently provide legal services within the areas permitted by Ontario law and the Law Society of Ontario. For matters within a paralegal\'s permitted scope, the quality of service and legal skills are held to a professional regulatory standard.' },
+      { q: 'Are your fees transparent?', a: 'Yes. Fees are explained clearly before a retainer is signed. A written quote or general fee information is provided before services begin. Government fees, filing fees, service fees and other third-party costs are separate from professional fees and are explained as they arise.' },
+      { q: 'Can you guarantee an outcome?', a: 'No. No outcome in legal proceedings can be guaranteed. Melville Paralegal Services provides careful preparation, honest advice and strategic representation — but results depend on the facts, evidence, applicable law and the decision-maker.' },
     ],
   },
   {
     cat: 'ODSP & CPP Disability',
     items: [
-      { q: 'What is the difference between ODSP and CPP Disability?', a: 'ODSP (Ontario Disability Support Program) is a provincial income support program for Ontario residents with disabilities who meet income and asset criteria. CPP Disability is a federal employment insurance benefit for people who have made sufficient CPP contributions and have a severe and prolonged disability. They have different eligibility criteria, application processes and appeal bodies.' },
-      { q: 'I was denied ODSP. Can you help me appeal?', a: 'Yes. MPS assists with ODSP internal reviews and appeals to the Social Benefits Tribunal. The first step is a free intake meeting to review the general circumstances and assess whether the appeal has a reasonable basis.' },
-      { q: 'Can you help with my CPP Disability application, or only with appeals?', a: 'Both. MPS can assist with CPP Disability applications, reconsiderations and appeals to the Social Security Tribunal. Starting with a well-prepared application can reduce delays and avoid the need for multiple appeals.' },
+      { q: 'What is the difference between ODSP and CPP Disability?', a: 'ODSP (Ontario Disability Support Program) is a provincial income support program for Ontario residents with disabilities who meet income and asset criteria. CPP Disability is a federal disability benefit under the Canada Pension Plan for people who have made sufficient CPP contributions and have a severe and prolonged disability. They have different eligibility criteria, application processes and appeal bodies.' },
+      { q: 'I was denied ODSP. Can you help me appeal?', a: 'Yes. Melville Paralegal Services assists with ODSP internal reviews and appeals to the Social Benefits Tribunal. The first step is to request a consultation to review the general circumstances and assess whether the appeal has a reasonable basis.' },
+      { q: 'Can you help with my CPP Disability application, or only with appeals?', a: 'Both. Melville Paralegal Services can assist with CPP Disability applications, reconsiderations and appeals to the Social Security Tribunal. Starting with a well-prepared application can reduce delays and avoid the need for multiple appeals.' },
     ],
   },
   {
     cat: 'Process & Meetings',
     items: [
-      { q: 'What happens at the free intake meeting?', a: 'The complimentary intake meeting is a brief virtual meeting by Zoom or Google Meet. It gives you an opportunity to describe the general nature of your matter and allows Heidi to determine whether MPS may be able to assist. It does not include legal advice, a detailed document review or an assessment of the merits. Attending the meeting does not create a paralegal-client relationship.' },
-      { q: 'Do I need to travel for appointments?', a: 'No. Most services are provided virtually across Ontario. For matters requiring in-person meetings, Heidi is available in Milton, Ottawa and Northern Ontario by arrangement. Mobile notary appointments are available for documents requiring in-person notarization.' },
+      { q: 'What happens after I request a consultation?', a: 'After you submit the Prospective Client Intake Form, your information is reviewed for conflicts, scope of practice, availability and general suitability. If Melville Paralegal Services may be able to assist, you will be contacted regarding the consultation format, any applicable fee and possible next steps. Submitting the form does not guarantee that a consultation or representation will be offered and does not create a paralegal-client relationship.' },
+      { q: 'Do I need to travel for appointments?', a: 'No. Most services are provided virtually across Ontario. For matters requiring in-person meetings, Heidi is available in Milton and New Liskeard / Temiskaming Shores by arrangement. Mobile notary appointments are available for documents requiring in-person notarization.' },
       { q: 'Are evening and weekend appointments available?', a: 'Yes. Flexible scheduling including evenings and weekends is available by appointment.' },
     ],
   },
@@ -87,8 +87,8 @@ export default function FAQ() {
                 </svg>
               </div>
               <h4>Have a Different Question?</h4>
-              <p>Book a complimentary virtual intake meeting to discuss the general nature of your matter.</p>
-              <a href="/intake" className="btn-primary sidebar-btn">Book Free Meeting</a>
+              <p>Complete the intake form to request a consultation and discuss the general nature of your matter.</p>
+              <a href="/intake" className="btn-primary sidebar-btn">Request a Consultation</a>
             </div>
 
             <div className="faq-sidebar-contact">

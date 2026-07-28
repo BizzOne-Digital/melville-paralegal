@@ -5,10 +5,10 @@ import CTABanner from '../components/CTA/CTABanner';
 import './About.css';
 
 const values = [
-  { title: 'Compassionate', desc: 'Legal problems don\'t happen in isolation. Illness, financial stress and conflict take a toll. Heidi takes time to listen and ensures every client feels heard and respected.' },
+  { title: 'Compassionate', desc: 'Melville Paralegal Services aims to provide respectful, patient and client-centred service. Legal problems can be stressful, and Heidi takes time to listen to every client.' },
   { title: 'Intelligent', desc: 'Careful legal research, thorough document review and strategic preparation are the foundation of every file.' },
-  { title: 'Transparent', desc: 'Clients always know where they stand, what the process involves, what costs may arise and what to expect next.' },
-  { title: 'Accessible', desc: 'Virtual appointments available across Ontario. In-person meetings available in Milton, Ottawa and Northern Ontario by arrangement. Flexible scheduling including evenings and weekends.' },
+  { title: 'Transparent', desc: 'Melville Paralegal Services provides clear information about the agreed scope, process, fees and next procedural steps.' },
+  { title: 'Accessible', desc: 'Ontario-wide virtual services; in-person meetings in Milton and New Liskeard / Temiskaming Shores by arrangement. Flexible scheduling including evenings and weekends.' },
 ];
 
 export default function About() {
@@ -62,7 +62,7 @@ export default function About() {
 
             <div className="about-locations">
               <h4>Service Areas</h4>
-              <p>Melville Paralegal Services serves clients across Ontario through virtual appointments. In-person meeting options are available in <strong>Milton</strong>, <strong>Ottawa</strong> and <strong>Northern Ontario (New Liskeard / Temiskaming Shores)</strong> by arrangement.</p>
+              <p>Ontario-wide virtual services; in-person meetings in <strong>Milton</strong> and <strong>New Liskeard / Temiskaming Shores</strong> by arrangement.</p>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function About() {
         <div className="container">
           <div className="section-header">
             <span className="section-label">Our Approach</span>
-            <h2>What Sets MPS Apart</h2>
+            <h2>The Melville Paralegal Services Approach</h2>
             <div className="divider-line" />
           </div>
           <div className="values-grid">
@@ -99,7 +99,7 @@ export default function About() {
             <h3>Regulated by the Law Society of Ontario</h3>
             <p>Heidi Melville is a Licensed Paralegal regulated by the Law Society of Ontario. Licensed paralegals are subject to professional standards, ethical obligations and continuing education requirements. You can verify any Ontario paralegal's licence at the LSO's public directory.</p>
           </div>
-          <a href="https://lso.ca" target="_blank" rel="noreferrer" className="btn-secondary">Verify at LSO</a>
+          <a href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory" target="_blank" rel="noreferrer" className="btn-secondary">Verify through the Law Society of Ontario</a>
         </div>
       </section>
 

@@ -14,80 +14,59 @@ const QuoteIcon = () => (
   </svg>
 );
 
-const fallbackTestimonials = [
-  {
-    name: 'Sandra M.',
-    service: 'ODSP Appeal',
-    rating: 5,
-    text: 'Heidi helped me through my ODSP appeal with patience and professionalism. She explained every step clearly and made sure I understood what was happening. I am so grateful for her support.',
-  },
-  {
-    name: 'Robert K.',
-    service: 'Landlord & Tenant Board',
-    rating: 5,
-    text: 'As a landlord dealing with a difficult tenancy situation, I had no idea where to start. Heidi organized the evidence, prepared the application and represented me at the hearing. Highly recommend.',
-  },
-  {
-    name: 'Maria T.',
-    service: 'CPP Disability',
-    rating: 5,
-    text: 'I had been denied CPP Disability twice before finding Melville Paralegal Services. Heidi identified gaps in my medical evidence, helped me gather what was needed and guided me through the reconsideration process.',
-  },
-];
-
 export default function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
     API.get('/testimonials')
-      .then(r => setTestimonials(r.data.length ? r.data : fallbackTestimonials))
-      .catch(() => setTestimonials(fallbackTestimonials));
+      .then(r => setTestimonials(r.data))
+      .catch(() => setTestimonials([]));
   }, []);
 
-  const t = testimonials[active] || fallbackTestimonials[0];
+  if (testimonials.length === 0) return null;
+
+  const t = testimonials[active];
 
   return (
     <section className="testimonials-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-label">Client Testimonials</span>
-          <h2>What Clients Say</h2>
+          <span className="section-label">Client Feedback</span>
+          <h2>Client Feedback</h2>
           <div className="divider-line" />
-          <p>These testimonials represent genuine client feedback shared with permission.</p>
+          <p>Genuine, authorized client feedback shared with permission. No outcome is guaranteed.</p>
         </div>
 
-        {testimonials.length > 0 && (
-          <div className="testimonial-featured">
-            <div className="testimonial-quote-icon"><QuoteIcon /></div>
-            <div className="testimonial-stars">
-              {[1,2,3,4,5].map(i => <StarIcon key={i} filled={i <= t.rating} />)}
-            </div>
-            <blockquote className="testimonial-text">"{t.text}"</blockquote>
-            <div className="testimonial-author">
-              <div className="author-avatar">
-                {t.name?.charAt(0)}
-              </div>
-              <div>
-                <strong>{t.name}</strong>
-                <span>{t.service}</span>
-              </div>
-            </div>
-
-            {testimonials.length > 1 && (
-              <div className="testimonial-dots">
-                {testimonials.map((_, i) => (
-                  <button
-                    key={i}
-                    className={`dot${i === active ? ' active' : ''}`}
-                    onClick={() => setActive(i)}
-                    aria-label={`View testimonial ${i + 1}`}
-                  />
-                ))}
-              </div>
-            )}
+        <div className="testimonial-featured">
+          <div className="testimonial-quote-icon"><QuoteIcon /></div>
+          <div className="testimonial-stars">
+            {[1,2,3,4,5].map(i => <StarIcon key={i} filled={i <= t.rating} />)}
           </div>
-        )}
+          <blockquote className="testimonial-text">"{t.text}"</blockquote>
+          <div className="testimonial-author">
+            <div className="author-avatar">
+              {t.name?.charAt(0)}
+            </div>
+            <div>
+              <strong>{t.name}</strong>
+              <span>{t.service}</span>
+            </div>
+          </div>
+
+          {testimonials.length > 1 && (
+            <div className="testimonial-dots">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  className={`dot${i === active ? ' active' : ''}`}
+                  onClick={() => setActive(i)}
+                  aria-label={`View testimonial ${i + 1}`}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

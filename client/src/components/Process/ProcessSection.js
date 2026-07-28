@@ -5,8 +5,8 @@ import './ProcessSection.css';
 const steps = [
   {
     step: '01',
-    title: 'Book Your Free Intake Meeting',
-    desc: 'Schedule a complimentary virtual meeting by Zoom or Google Meet. We discuss the general nature of your matter and whether MPS may be able to assist.',
+    title: 'Request a Consultation',
+    desc: 'Complete the Prospective Client Intake Form. We review the general nature of your matter and whether Melville Paralegal Services may be able to assist.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
@@ -26,7 +26,7 @@ const steps = [
   {
     step: '03',
     title: 'Preparation & Representation',
-    desc: 'Heidi prepares submissions, organizes evidence and represents you at hearings. You are kept informed at every stage so you always know what to expect.',
+    desc: 'Heidi prepares submissions, organizes evidence and represents you at hearings. Melville Paralegal Services communicates at agreed stages and explains the next procedural steps.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -43,7 +43,7 @@ export default function ProcessSection() {
           <span className="section-label">How It Works</span>
           <h2>A Simple, Transparent Process</h2>
           <div className="divider-line" />
-          <p>No surprises, no confusion. Just clear guidance from your first contact through to resolution.</p>
+          <p>Clear written information about scope, fees and next steps — from your first contact through to resolution.</p>
         </div>
 
         <div className="process-steps">
@@ -72,11 +72,11 @@ export default function ProcessSection() {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
             <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
-          <p>The intake meeting does not constitute legal advice or create a paralegal-client relationship. No outcome is guaranteed.</p>
+          <p>Submitting the intake form does not guarantee that a consultation will be offered and does not create a paralegal-client relationship. No outcome is guaranteed.</p>
         </div>
 
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
-          <Link to="/intake" className="btn-primary">Start with a Free Meeting</Link>
+          <Link to="/intake" className="btn-primary">Request a Consultation</Link>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Phone & Text',
-    lines: ['289-981-7712', 'Toll-free: 1-877-390-3946'],
+    lines: ['289-981-7712', 'Fax: 1-877-390-3946'],
   },
   {
     icon: (
@@ -21,7 +21,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Email',
-    lines: ['General: connect@melvilleparalegal.ca', 'New clients: intake@melvilleparalegal.ca', 'Direct: heidi@melvilleparalegal.ca'],
+    lines: ['General Inquiries: connect@melvilleparalegal.ca', 'Direct: heidi@melvilleparalegal.ca'],
   },
   {
     icon: (
@@ -59,7 +59,7 @@ export default function Contact() {
     <div className="contact-page">
       <PageHeader
         title="Contact Melville Paralegal Services"
-        subtitle="Reach out by phone, email or the form below. For new client inquiries, use the intake form to book your complimentary virtual meeting."
+        subtitle="Reach out by phone, email or the form below. For new client inquiries, complete the intake form to request a consultation."
         breadcrumb={[{ label: 'Contact' }]}
       />
 
@@ -84,14 +84,14 @@ export default function Contact() {
 
             <div className="contact-hours">
               <h4>Meeting Availability</h4>
-              <p>Virtual appointments by Zoom or Google Meet are available during the day, evenings and weekends. In-person meetings in Milton, Ottawa and Northern Ontario are available by arrangement.</p>
+              <p>Virtual appointments by Zoom or Google Meet are available during the day, evenings and weekends. Ontario-wide virtual services; in-person meetings in Milton and New Liskeard / Temiskaming Shores are available by arrangement.</p>
             </div>
 
             <div className="contact-disclaimer">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
-              <p>This contact form is for general inquiries. Please do not include sensitive confidential information before a retainer is in place. Use the intake form to book your free virtual meeting.</p>
+              <p>This contact form is for general inquiries. Please do not include sensitive confidential information before a retainer is in place. Use the intake form to request a consultation.</p>
             </div>
           </div>
 

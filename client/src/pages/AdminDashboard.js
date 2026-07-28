@@ -33,7 +33,7 @@ function AdminSidebar({ onClose }) {
       <div className="admin-sidebar-logo">
         <div className="admin-logo-mark-sm"><span>M</span></div>
         <div>
-          <span className="admin-logo-nm">MPS Admin</span>
+          <span className="admin-logo-nm">Melville Paralegal Admin</span>
           <span className="admin-logo-sb">Melville Paralegal</span>
         </div>
       </div>
@@ -219,12 +219,16 @@ function IntakeManager() {
           <div className="admin-detail-panel">
             <div className="detail-header">
               <div>
-                <h3>{selected.firstName} {selected.lastName}</h3>
+                <h3>{selected.firstName} {selected.lastName} {selected.preferredName && `(${selected.preferredName})`}</h3>
                 <span>{selected.email} {selected.phone && `· ${selected.phone}`}</span>
               </div>
               <button className="detail-close" onClick={() => setSelected(null)}>✕</button>
             </div>
             <div className="detail-field"><strong>Service Type:</strong> {selected.serviceType}</div>
+            {selected.courtOrTribunal && <div className="detail-field"><strong>Court/Tribunal:</strong> {selected.courtOrTribunal}</div>}
+            {selected.fileNumber && <div className="detail-field"><strong>File Number:</strong> {selected.fileNumber}</div>}
+            {selected.opposingParties && <div className="detail-field"><strong>Opposing/Related Parties:</strong> {selected.opposingParties}</div>}
+            {selected.knownDates && <div className="detail-field"><strong>Known Dates:</strong> {selected.knownDates}</div>}
             <div className="detail-field"><strong>Preferred Contact:</strong> {selected.preferredContact}</div>
             {selected.preferredTime && <div className="detail-field"><strong>Availability:</strong> {selected.preferredTime}</div>}
             {selected.briefDescription && <div className="detail-message">{selected.briefDescription}</div>}

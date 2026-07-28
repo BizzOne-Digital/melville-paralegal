@@ -7,32 +7,38 @@ const serviceOptions = [
   'ODSP — denial, internal review or Social Benefits Tribunal appeal',
   'CPP Disability — application, reconsideration or appeal',
   'Landlord & Tenant Board — landlord matter',
+  'Residential Tenant Matter — Case-by-Case Review',
   'Human Rights Tribunal of Ontario',
   'Small Claims Court',
   'Judgment Enforcement',
   'Legal Research or Document Drafting',
-  'Notary Public or Commissioner Services',
+  'Notary Public or Commissioner for Taking Affidavits Services',
   'Other / Not sure',
 ];
 
+const initialForm = {
+  firstName: '', lastName: '', preferredName: '', email: '', phone: '',
+  serviceType: '', opposingParties: '', courtOrTribunal: '', fileNumber: '', knownDates: '',
+  briefDescription: '', preferredContact: 'either', preferredTime: '', privacyConsent: false,
+};
+
 export default function Intake() {
-  const [form, setForm] = useState({
-    firstName: '', lastName: '', email: '', phone: '',
-    serviceType: '', briefDescription: '',
-    preferredContact: 'either', preferredTime: '',
-  });
+  const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = e => {
+    const { name, type, value, checked } = e.target;
+    setForm({ ...form, [name]: type === 'checkbox' ? checked : value });
+  };
 
   const handleSubmit = async e => {
     e.preventDefault();
     setLoading(true);
     try {
-      const r = await API.post('/intake', form);
+      await API.post('/intake', form);
       setStatus('success');
-      setForm({ firstName: '', lastName: '', email: '', phone: '', serviceType: '', briefDescription: '', preferredContact: 'either', preferredTime: '' });
+      setForm(initialForm);
     } catch {
       setStatus('error');
     }
@@ -42,9 +48,9 @@ export default function Intake() {
   return (
     <div className="intake-page">
       <PageHeader
-        title="Book Your Free Intake Meeting"
-        subtitle="A complimentary virtual meeting by Zoom or Google Meet to discuss the general nature of your matter. No legal advice, no obligation — just a clear conversation."
-        breadcrumb={[{ label: 'Free Intake Meeting' }]}
+        title="Request a Consultation"
+        subtitle="Complete the secure Prospective Client Intake Form to request a consultation with Melville Paralegal Services."
+        breadcrumb={[{ label: 'Request a Consultation' }]}
       />
 
       <section className="intake-section">
@@ -54,7 +60,7 @@ export default function Intake() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
                 <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
-              <p>This form is for booking an initial intake meeting only. Please provide only general information. Do not include sensitive personal details, medical records or confidential information at this stage. Completing this form does not create a paralegal-client relationship.</p>
+              <p>The information will be reviewed for conflicts, scope of practice, availability and general suitability. If Melville Paralegal Services may be able to assist, you will be contacted regarding the consultation format, any applicable fee and possible next steps. Submitting this form does not guarantee that a consultation or representation will be offered and does not create a paralegal-client relationship. No deadline is suspended or extended by submitting this form. Representation begins only after Melville Paralegal Services accepts the matter and confirms the engagement in writing. Please provide only general information — do not include extensive confidential detail at this stage.</p>
             </div>
 
             {status === 'success' && (
@@ -62,34 +68,38 @@ export default function Intake() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
-                Your intake request has been submitted. We will follow up within one business day to confirm your appointment.
+                Your request has been submitted. We will follow up within one business day.
               </div>
             )}
 
             {status === 'error' && (
-              <div className="form-error">There was an issue submitting the form. Please email intake@melvilleparalegal.ca directly.</div>
+              <div className="form-error">There was an issue submitting the form. Please email connect@melvilleparalegal.ca directly.</div>
             )}
 
             <form className="intake-form contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
-                  <label>First Name *</label>
+                  <label>Full Legal Name *</label>
                   <input name="firstName" value={form.firstName} onChange={handleChange} required placeholder="First name" />
                 </div>
                 <div className="form-group">
-                  <label>Last Name *</label>
+                  <label>&nbsp;</label>
                   <input name="lastName" value={form.lastName} onChange={handleChange} required placeholder="Last name" />
                 </div>
               </div>
               <div className="form-row">
                 <div className="form-group">
-                  <label>Email Address *</label>
-                  <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="your@email.com" />
+                  <label>Preferred Name</label>
+                  <input name="preferredName" value={form.preferredName} onChange={handleChange} placeholder="Optional" />
                 </div>
                 <div className="form-group">
                   <label>Phone Number</label>
                   <input name="phone" value={form.phone} onChange={handleChange} placeholder="Optional" />
                 </div>
+              </div>
+              <div className="form-group">
+                <label>Email Address *</label>
+                <input name="email" type="email" value={form.email} onChange={handleChange} required placeholder="your@email.com" />
               </div>
               <div className="form-group">
                 <label>Type of Matter *</label>
@@ -98,6 +108,24 @@ export default function Intake() {
                   {serviceOptions.map((o, i) => <option key={i} value={o}>{o}</option>)}
                 </select>
               </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Court or Tribunal (if applicable)</label>
+                  <input name="courtOrTribunal" value={form.courtOrTribunal} onChange={handleChange} placeholder="e.g. Landlord and Tenant Board" />
+                </div>
+                <div className="form-group">
+                  <label>File Number (if applicable)</label>
+                  <input name="fileNumber" value={form.fileNumber} onChange={handleChange} placeholder="Optional" />
+                </div>
+              </div>
+              <div className="form-group">
+                <label>Opposing / Related Parties &amp; Known Representatives</label>
+                <input name="opposingParties" value={form.opposingParties} onChange={handleChange} placeholder="Names of any opposing parties, related parties or their representatives" />
+              </div>
+              <div className="form-group">
+                <label>Known Hearing, Appeal, Filing or Limitation Dates</label>
+                <input name="knownDates" value={form.knownDates} onChange={handleChange} placeholder="List any known deadlines" />
+              </div>
               <div className="form-group">
                 <label>Brief Description</label>
                 <textarea
@@ -105,7 +133,7 @@ export default function Intake() {
                   rows="4"
                   value={form.briefDescription}
                   onChange={handleChange}
-                  placeholder="Describe your situation in general terms only. For example: 'I was denied ODSP and want to appeal.' Do not include medical information, case numbers or confidential details at this stage."
+                  placeholder="Describe your situation in general terms only. For example: 'I was denied ODSP and want to appeal.' Do not include medical information or extensive confidential detail at this stage."
                 />
               </div>
               <div className="form-row">
@@ -124,11 +152,14 @@ export default function Intake() {
               </div>
 
               <div className="intake-consent">
-                <p>By submitting this form, you acknowledge that this does not constitute a paralegal-client relationship, does not include legal advice, and that your information will be used only to respond to your inquiry and assess whether MPS may be able to assist.</p>
+                <label className="checkbox-label">
+                  <input type="checkbox" name="privacyConsent" checked={form.privacyConsent} onChange={handleChange} required />
+                  I consent to the collection of this information and acknowledge that submitting this form does not create a paralegal-client relationship, does not include legal advice, does not guarantee that a consultation will be offered, and does not suspend or extend any deadline. My information will be used only to assess this inquiry and respond to it.
+                </label>
               </div>
 
               <button type="submit" className="btn-primary form-submit" disabled={loading}>
-                {loading ? 'Submitting...' : 'Submit Intake Request'}
+                {loading ? 'Submitting...' : 'Request a Consultation'}
               </button>
             </form>
           </div>
@@ -140,22 +171,22 @@ export default function Intake() {
                 <li>
                   <span>1</span>
                   <div>
-                    <strong>Submit this form</strong>
-                    <p>General information only — no confidential details required at this stage.</p>
+                    <strong>Submit the Prospective Client Intake Form</strong>
+                    <p>General information only — no extensive confidential detail required at this stage.</p>
                   </div>
                 </li>
                 <li>
                   <span>2</span>
                   <div>
-                    <strong>Confirmation within 1 business day</strong>
-                    <p>We will follow up to confirm your free virtual meeting time.</p>
+                    <strong>Review for conflicts and suitability</strong>
+                    <p>Your information is reviewed for conflicts, scope of practice, availability and general suitability.</p>
                   </div>
                 </li>
                 <li>
                   <span>3</span>
                   <div>
-                    <strong>Virtual meeting (Zoom or Google Meet)</strong>
-                    <p>Brief discussion of your matter, possible services, fees and next steps.</p>
+                    <strong>Follow-up within 1 business day</strong>
+                    <p>If Melville Paralegal Services may be able to assist, you will be contacted regarding the consultation format, any applicable fee and possible next steps.</p>
                   </div>
                 </li>
               </ol>
@@ -164,8 +195,8 @@ export default function Intake() {
             <div className="intake-contact-card">
               <h4>Prefer to Contact Us Directly?</h4>
               <p><strong>Phone/Text:</strong> 289-981-7712</p>
-              <p><strong>Toll-free:</strong> 1-877-390-3946</p>
-              <p><strong>Email:</strong> intake@melvilleparalegal.ca</p>
+              <p><strong>Fax:</strong> 1-877-390-3946</p>
+              <p><strong>Email:</strong> connect@melvilleparalegal.ca</p>
             </div>
           </aside>
         </div>

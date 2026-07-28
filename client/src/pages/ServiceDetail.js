@@ -12,7 +12,7 @@ const fallbackServiceData = {
     subtitle: 'Compassionate, strategic assistance with Ontario and federal disability benefit processes.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
     intro: 'Disability benefits exist to support people who cannot work due to illness or disability — but the application and appeal process can be complex, confusing and emotionally exhausting. Melville Paralegal Services provides practical assistance at every stage of the ODSP and CPP Disability processes.',
-    important: 'ODSP and CPP Disability are separate programs with different eligibility criteria, application processes and appeal bodies. MPS clearly distinguishes both processes and explains which applies to your situation.',
+    important: 'ODSP and CPP Disability are separate programs with different eligibility criteria, application processes and appeal bodies. Melville Paralegal Services clearly distinguishes both processes and explains which applies to your situation.',
     sections: [
       {
         title: 'ODSP — Ontario Disability Support Program',
@@ -21,11 +21,11 @@ const fallbackServiceData = {
       },
       {
         title: 'CPP Disability — Canada Pension Plan Disability',
-        body: 'CPP Disability is a federal benefit administered by Service Canada. To qualify, you must have made sufficient CPP contributions and have a disability that is both severe and prolonged. If denied, you may request a reconsideration and, if still denied, appeal to the Social Security Tribunal of Canada.',
+        body: 'CPP Disability is a federal disability benefit under the Canada Pension Plan, administered by Service Canada. To qualify, you must have made sufficient CPP contributions and have a disability that is both severe and prolonged. If denied, you may request a reconsideration and, if still denied, appeal to the Social Security Tribunal of Canada.',
         items: ['CPP Disability applications', 'Reconsideration requests', 'Social Security Tribunal appeals', 'Reviewing medical records and functional reports', 'Organizing evidence and identifying gaps', 'Written submissions and hearing preparation', 'Representation at the General Division and Appeal Division'],
       },
     ],
-    disclaimer: 'No outcome is guaranteed. Results depend on the individual circumstances, the medical evidence, applicable eligibility criteria and the decision-maker. MPS provides honest assessments and will not accept a file where there is no reasonable basis for the appeal.',
+    disclaimer: 'No outcome is guaranteed. Results depend on the individual circumstances, the medical evidence, applicable eligibility criteria and the decision-maker. Melville Paralegal Services provides honest assessments and will not accept a file where there is no reasonable basis for the appeal.',
   },
   'landlord-tenant': {
     title: 'Landlord & Tenant Board',
@@ -33,23 +33,28 @@ const fallbackServiceData = {
     subtitle: 'Practical LTB assistance for Ontario residential landlords.',
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
     intro: 'Dealing with a difficult tenancy can be stressful, time-consuming and costly. Melville Paralegal Services helps Ontario residential landlords understand their rights, prepare the right documents and navigate the Landlord and Tenant Board process.',
-    important: 'Select tenant matters may also be accepted based on the issues, evidence and availability. Contact MPS to discuss your situation.',
+    important: 'Melville Paralegal Services represents landlords in most LTB matters. Residential tenant matters may be accepted on a case-by-case basis.',
     sections: [
       {
         title: 'Landlord Services at the LTB',
-        body: 'MPS assists landlords with a range of residential tenancy matters before the Landlord and Tenant Board. The LTB process has specific procedural requirements. Proper preparation of notices and applications — and organized evidence — are essential to a well-presented case.',
+        body: 'Melville Paralegal Services assists landlords with a range of residential tenancy matters before the Landlord and Tenant Board. The LTB process has specific procedural requirements. Proper preparation of notices and applications — and organized evidence — are essential to a well-presented case.',
         items: ['Rent arrears and persistent late payment', 'Tenant conduct and disturbance', 'Property damage', 'Substantial interference with reasonable enjoyment', 'Unauthorized occupants', "Landlord's own use", 'Preparing and reviewing notices', 'Filing LTB applications', 'Evidence organization', 'Settlement discussions', 'Hearing preparation and representation'],
       },
+      {
+        title: 'Residential Tenant Matters — Case-by-Case Review',
+        body: 'Residential tenant matters may be accepted on a case-by-case basis. Acceptance depends on the legal and procedural issues, available evidence, applicable deadlines, conflicts of interest, the stage of the proceeding, the services requested and Melville Paralegal Services’ capacity. Submitting an inquiry does not guarantee that the matter will be accepted.',
+        items: [],
+      },
     ],
-    disclaimer: 'MPS represents landlords only in most LTB matters. Select tenant matters may be accepted based on circumstances and availability. LTB processes and timelines are subject to change. Outcomes depend on individual facts and the evidence presented.',
+    disclaimer: 'Melville Paralegal Services represents landlords only in most LTB matters. Residential tenant matters may be accepted on a case-by-case basis. LTB processes and timelines are subject to change. Outcomes depend on individual facts and the evidence presented.',
   },
   'human-rights': {
     title: 'Human Rights Tribunal of Ontario',
     tag: 'Select Matters',
     subtitle: 'Assistance with select discrimination and accommodation matters under the Ontario Human Rights Code.',
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80',
-    intro: 'The Ontario Human Rights Code protects people from discrimination in areas such as employment, housing and services based on protected grounds including disability, race, sex and other characteristics. MPS accepts select human rights matters based on the issues, evidence and availability.',
-    important: 'Not all human rights matters fall within the permitted scope of paralegal practice. MPS will clearly advise whether your matter can be assisted and, if not, help identify appropriate referrals.',
+    intro: 'The Ontario Human Rights Code protects people from discrimination in areas such as employment, housing and services based on protected grounds including disability, race, sex and other characteristics. Melville Paralegal Services accepts select human rights matters based on the issues, evidence and availability.',
+    important: 'Not all human rights matters fall within the permitted scope of paralegal practice. Melville Paralegal Services will clearly advise whether your matter can be assisted and, if not, help identify appropriate referrals.',
     sections: [
       {
         title: 'HRTO — Select Matters',
@@ -64,40 +69,40 @@ const fallbackServiceData = {
     tag: 'Civil Matters',
     subtitle: 'Assistance for individuals and small businesses with Small Claims Court matters in Ontario.',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
-    intro: "Small Claims Court in Ontario handles civil disputes up to $35,000. The process can be straightforward — but procedural missteps, missing deadlines or poorly organized evidence can undermine an otherwise strong case. MPS helps individuals and small businesses present their matters clearly and effectively.",
+    intro: "Small Claims Court in Ontario generally hears claims for money or personal property valued at up to $50,000, subject to the applicable law and rules. The process can be straightforward — but procedural missteps, missing deadlines or poorly organized evidence can undermine an otherwise strong case. Melville Paralegal Services helps individuals and small businesses present their matters clearly and effectively.",
     important: 'Small Claims Court has specific procedural timelines and requirements. Early legal assistance helps avoid procedural errors that can affect the outcome of your claim.',
     sections: [
       {
         title: 'Small Claims Court Services',
-        body: 'MPS assists with both claims and defences in Small Claims Court, from initial demand letters through to trial representation.',
+        body: 'Melville Paralegal Services assists with both claims and defences in Small Claims Court, from initial demand letters through to trial representation.',
         items: ['Unpaid accounts and invoices', 'Contract disputes', 'Property damage', 'Consumer disputes', 'Demand letters', "Plaintiff's Claims", 'Defences', "Defendant's Claims", 'Settlement conferences', 'Motions and negotiations', 'Hearing preparation and trial representation'],
       },
     ],
-    disclaimer: "Ontario's Small Claims Court monetary limit is currently $35,000. MPS cannot assist with matters outside the permitted scope of paralegal practice. No outcome is guaranteed.",
+    disclaimer: "As of October 1, 2025, Ontario's Small Claims Court generally hears claims for money or personal property valued at up to $50,000, subject to the applicable law and rules. Melville Paralegal Services cannot assist with matters outside the permitted scope of paralegal practice. No outcome is guaranteed.",
   },
   'judgment-enforcement': {
     title: 'Judgment Enforcement',
     tag: 'Post-Judgment',
     subtitle: 'Helping Ontario judgment creditors take practical steps toward recovering what they are owed.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
-    intro: 'Winning a judgment is only the first step. A court order does not automatically result in payment — you must take enforcement steps to recover the money owed. MPS assists judgment creditors with enforcement planning and legally available enforcement procedures.',
-    important: 'Recovery cannot be guaranteed and depends on the debtor\'s income, assets and financial circumstances. MPS provides an honest assessment of enforcement options and realistic expectations before proceeding.',
+    intro: 'Winning a judgment is only the first step. A court order does not automatically result in payment — you must take enforcement steps to recover the money owed. Melville Paralegal Services assists judgment creditors with enforcement planning and legally available enforcement procedures.',
+    important: 'Recovery cannot be guaranteed and depends on the debtor\'s income, assets and financial circumstances. Melville Paralegal Services provides an honest assessment of enforcement options and realistic expectations before proceeding.',
     sections: [
       {
         title: 'Judgment Enforcement Services',
-        body: 'MPS assists with planning and pursuing legally available enforcement procedures after a Small Claims Court or other civil judgment.',
+        body: 'Melville Paralegal Services assists with planning and pursuing legally available enforcement procedures after a Small Claims Court or other civil judgment.',
         items: ['Enforcement planning', 'Payment demands', 'Debtor examinations (examination in aid of execution)', 'Wage garnishments', 'Bank account garnishments', 'Writs of seizure and sale', 'Credit bureau reporting where applicable', 'Enforcement correspondence'],
       },
     ],
-    disclaimer: 'Recovery depends entirely on the debtor\'s income, assets and financial circumstances. Not all judgments are collectible. MPS provides honest assessments and will not pursue enforcement that is unlikely to result in any recovery.',
+    disclaimer: 'Recovery depends entirely on the debtor\'s income, assets and financial circumstances. Not all judgments are collectible. Melville Paralegal Services provides honest assessments and will not pursue enforcement that is unlikely to result in any recovery.',
   },
   'legal-research': {
     title: 'Legal Research & Document Drafting',
     tag: 'Document Services',
     subtitle: 'Focused legal research and written advocacy within the permitted scope of Ontario paralegal practice.',
     image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80',
-    intro: 'Not every legal matter requires full representation. MPS provides limited-scope legal research, written advocacy and document drafting services for matters within the permitted scope of Ontario paralegal practice.',
-    important: 'Limited-scope services are confirmed in writing and do not include ongoing representation unless expressly agreed. MPS is clear about what is and is not included in each engagement.',
+    intro: 'Not every legal matter requires full representation. Melville Paralegal Services provides limited-scope legal research, written advocacy and document drafting services for matters within the permitted scope of Ontario paralegal practice.',
+    important: 'Limited-scope legal research, document review or drafting does not include continuing representation, filing, service, negotiations or hearing attendance unless expressly included in a written agreement. The services included, any legal advice provided and the limits of the engagement will be confirmed in writing.',
     sections: [
       {
         title: 'Research & Drafting Services',
@@ -105,10 +110,10 @@ const fallbackServiceData = {
         items: ['Legal research memoranda', 'Written opinions within permitted scope', 'Hearing briefs and factums', 'Written submissions', 'Demand letters', 'Cease-and-desist letters', 'Settlement proposals', 'Procedural correspondence', 'Affidavits', 'Statutory declarations', 'Court and tribunal documents'],
       },
     ],
-    disclaimer: 'Document drafting does not constitute legal advice and does not create a full representation relationship unless confirmed in writing. MPS can only draft documents within the permitted scope of Ontario paralegal practice.',
+    disclaimer: 'Limited-scope legal research, document review or drafting does not include continuing representation, filing, service, negotiations or hearing attendance unless expressly included in a written agreement. The services included, any legal advice provided and the limits of the engagement will be confirmed in writing. Melville Paralegal Services can only draft documents within the permitted scope of Ontario paralegal practice.',
   },
   'notary': {
-    title: 'Notary Public & Commissioner of Oaths',
+    title: 'Notary Public & Commissioner for Taking Affidavits',
     tag: 'Notarial Services',
     subtitle: 'In-person and mobile notary services, and remote commissioning where Ontario regulations permit.',
     image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&q=80',
@@ -118,10 +123,10 @@ const fallbackServiceData = {
       {
         title: 'Notary Public Services',
         body: 'Notarization must be completed in person. Heidi can meet clients at an agreed location or travel to them by appointment. Travel charges may apply.',
-        items: ['Notarizing signatures', 'Certified true copies', 'Consent-to-travel documents', 'Invitation letters', 'Other documents requiring a notary public', 'Mobile notary (travel to client or agreed location)', 'Serving Milton, Ottawa and Northern Ontario'],
+        items: ['Notarizing signatures', 'Certified true copies', 'Consent-to-travel documents', 'Invitation letters', 'Other documents requiring a notary public', 'Mobile notary (travel to client or agreed location)', 'Serving Milton and New Liskeard / Temiskaming Shores'],
       },
       {
-        title: 'Commissioner of Oaths Services',
+        title: 'Commissioner for Taking Affidavits Services',
         body: 'Eligible documents may be commissioned remotely by video appointment where Ontario Regulation 431/20 requirements are met.',
         items: ['Commissioning affidavits', 'Statutory declarations', 'Oaths and affirmations', 'Remote commissioning by video (where eligible)', 'In-person commissioning available'],
       },
@@ -217,14 +222,14 @@ export default function ServiceDetail() {
           <aside className="service-detail-sidebar">
             <div className="sidebar-cta-card">
               <h3>Ready to Discuss Your Matter?</h3>
-              <p>Book a complimentary virtual intake meeting with Heidi to determine whether MPS can assist.</p>
-              <Link to="/intake" className="btn-primary sidebar-full-btn">Book Free Meeting</Link>
+              <p>Request a consultation to determine whether Melville Paralegal Services may be able to assist.</p>
+              <Link to="/intake" className="btn-primary sidebar-full-btn">Request a Consultation</Link>
               <div className="sidebar-divider" />
               <div className="sidebar-contact">
                 <p><strong>Call or Text</strong></p>
                 <a href="tel:+12899817712">289-981-7712</a>
                 <p style={{ marginTop: 8 }}><strong>Email</strong></p>
-                <a href="mailto:intake@melvilleparalegal.ca">intake@melvilleparalegal.ca</a>
+                <a href="mailto:connect@melvilleparalegal.ca">connect@melvilleparalegal.ca</a>
               </div>
             </div>
 

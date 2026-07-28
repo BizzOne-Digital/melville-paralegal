@@ -6,14 +6,14 @@ import './Pricing.css';
 
 const accessOptions = [
   {
-    title: 'Complimentary Virtual Intake Meeting',
+    title: 'Request a Consultation',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
         <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
       </svg>
     ),
-    desc: 'A complimentary introductory meeting by Zoom or Google Meet to discuss the general nature of your matter and whether MPS may be able to assist. Does not include legal advice or a detailed assessment. Booking does not create a paralegal-client relationship.',
-    cta: 'Book Free Meeting',
+    desc: 'Complete the Prospective Client Intake Form to request a consultation to discuss the general nature of your matter and whether Melville Paralegal Services may be able to assist. Submitting the form does not guarantee that a consultation will be offered and does not create a paralegal-client relationship.',
+    cta: 'Request a Consultation',
     ctaLink: '/intake',
     highlight: true,
   },
@@ -26,6 +26,8 @@ const accessOptions = [
     ),
     desc: 'Reduced professional fees, limited-scope services or alternative arrangements may be available in limited circumstances through a confidential hardship-pricing application. Subject to individual circumstances, the nature of the matter and practice capacity. Not guaranteed. Only effective when confirmed in writing.',
     note: 'Government fees, filing fees, process-serving expenses, searches, reports and other third-party costs are not reduced unless expressly confirmed.',
+    cta: 'Apply for Hardship Pricing',
+    ctaLink: '/contact',
     highlight: false,
   },
   {
@@ -66,8 +68,8 @@ export default function Pricing() {
               <span className="section-label">Our Approach to Fees</span>
               <h2>Transparent, Explained in Advance</h2>
               <div className="divider-line" style={{ margin: '16px 0' }} />
-              <p>Legal fees at Melville Paralegal Services are presented as professional service options, not commercial products. Before any retainer is signed, fees are clearly explained — including what is and is not included.</p>
-              <p>Detailed fees are provided through a current, dated pricing guide or a written matter-specific quote. Fees vary depending on the nature and scope of the matter.</p>
+              <p>Melville Paralegal Services may offer flat-fee, stage-based, limited-scope, hourly or customized service arrangements depending on the nature and complexity of the matter. Exact prices and the detailed pricing guide are not published on this website. Prospective clients may request general fee information or a matter-specific written quote.</p>
+              <p>Before work begins, clients receive written confirmation of the agreed services, professional fee, applicable HST, anticipated disbursements, payment requirements and services excluded from the agreed scope.</p>
               <p>Government fees, filing fees, process-serving expenses, searches, reports and other third-party costs are separate from professional fees and are explained clearly as they arise.</p>
             </div>
             <div className="pricing-phil-card">
@@ -79,10 +81,10 @@ export default function Pricing() {
                   <line x1="16" y1="17" x2="8" y2="17"/>
                 </svg>
               </div>
-              <h3>Request a Quote</h3>
-              <p>Contact us to receive a current pricing guide or a written matter-specific quote before committing to any services.</p>
-              <Link to="/contact" className="btn-primary phil-btn">Contact for Pricing</Link>
-              <p className="phil-note">No obligation. No surprise fees.</p>
+              <h3>Request Fee Information</h3>
+              <p>Contact us to receive general fee information or a written matter-specific quote before committing to any services.</p>
+              <Link to="/contact" className="btn-primary phil-btn">Request Fee Information</Link>
+              <Link to="/contact" className="btn-secondary phil-btn" style={{ marginTop: 10 }}>Apply for Hardship Pricing</Link>
             </div>
           </div>
 

@@ -32,6 +32,18 @@
   line-height: 1.65;
 }
 
+.intake-consent .checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.intake-consent .checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
 /* Sidebar */
 .intake-info-card {
   background: var(--plum-dark);

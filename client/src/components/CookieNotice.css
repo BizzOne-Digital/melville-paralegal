@@ -1,0 +1,33 @@
+.cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background: var(--plum-dark);
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+}
+
+.cookie-notice p {
+  margin: 0;
+  font-size: 0.85rem;
+  max-width: 700px;
+}
+
+.cookie-notice a {
+  color: var(--taupe-light);
+  text-decoration: underline;
+}
+
+.cookie-notice-btn {
+  flex-shrink: 0;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+}

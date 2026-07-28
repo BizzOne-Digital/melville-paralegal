@@ -119,7 +119,7 @@ export default function ServicesSection() {
 
         <div className="services-cta">
           <p>Not sure which service applies to your situation?</p>
-          <Link to="/intake" className="btn-primary">Book a Free Intake Meeting</Link>
+          <Link to="/intake" className="btn-primary">Request a Consultation</Link>
         </div>
       </div>
     </section>
