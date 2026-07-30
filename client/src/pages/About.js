@@ -38,7 +38,7 @@ export default function About() {
     <div className="about-page">
       <PageHeader
         title="About Heidi Melville & Melville Paralegal Services"
-        subtitle="Heidi Melville, Licensed Paralegal, P15789 (Ontario)."
+        subtitle="Heidi Melville, Licensed Paralegal."
         breadcrumb={[{ label: 'About' }]}
       />
 
@@ -59,8 +59,8 @@ export default function About() {
               </div>
               <div>
                 <strong>Heidi Melville</strong>
-                <span>Licensed Paralegal, P15789</span>
-                <span>Law Society of Ontario</span>
+                <span>Licensed Paralegal</span>
+                <span>Licence No. P15789</span>
               </div>
             </div>
           </div>
@@ -70,21 +70,23 @@ export default function About() {
             <h2>Heidi Melville, Licensed Paralegal</h2>
             <div className="divider-line" style={{ margin: '16px 0' }} />
 
-            <p>Melville Paralegal Services is an Ontario paralegal practice serving clients across the province, with a main office in Milton and a satellite office in New Liskeard, Ontario. The practice was established to provide focused, practical and clearly defined legal services — not to overwhelm clients with legal terminology, but to help them understand the process, organize the necessary information and make informed decisions about their matter. Melville Paralegal Services is operated by Heidi Melville, a Licensed Paralegal regulated by the Law Society of Ontario.</p>
+            <p>Melville Paralegal Services is an Ontario paralegal practice serving clients across the province, with its main office in Milton and an additional office location in New Liskeard, Ontario. The practice was established to provide focused, practical and clearly defined legal services. Its objective is to help clients understand the applicable legal process, organize the necessary information and make informed decisions about their matters.</p>
 
-            <p>Heidi Melville is a Licensed Paralegal and the founder of Melville Paralegal Services, an Ontario-based practice committed to providing clients with clear, practical and compassionate legal assistance. Heidi's practice focuses primarily on disability-benefit appeals and residential landlord matters. She assists clients with Ontario Disability Support Program internal reviews and appeals before the Social Benefits Tribunal, as well as CPP Disability reconsideration requests and appeals before the Social Security Tribunal.</p>
+            <p>Melville Paralegal Services is operated by Heidi Melville, a paralegal licensed by the Law Society of Ontario, Licence No. P15789.</p>
 
-            <p>A substantial part of Heidi's practice is dedicated to representing and assisting Ontario landlords with matters before the Landlord and Tenant Board. Her services include guidance regarding notices, applications, rent arrears, termination of tenancies, damage claims, hearing preparation, representation at hearings, and the enforcement of Landlord and Tenant Board orders through the Small Claims Court, where appropriate.</p>
+            <p>Heidi's practice focuses primarily on disability-benefit appeals and residential landlord matters. She assists clients with Ontario Disability Support Program internal reviews and appeals before the Social Benefits Tribunal, as well as Canada Pension Plan disability reconsideration requests and appeals before the Social Security Tribunal.</p>
 
-            <p>Heidi also assists clients with Small Claims Court proceedings, judgment enforcement, court and tribunal document preparation within Ontario paralegal scope, and Notary Public and Commissioner for Taking Affidavits services. Tenant matters and other legal matters are considered on a case-by-case basis.</p>
+            <p>A substantial part of Heidi's practice is dedicated to representing and assisting Ontario landlords in matters before the Landlord and Tenant Board. Her services may include advice and assistance concerning notices, applications, rent arrears, termination of tenancies, damage claims, document and evidence preparation, hearing preparation and representation at hearings. Where appropriate and within permitted paralegal scope, she also assists with the enforcement of Landlord and Tenant Board orders through the Ontario Small Claims Court.</p>
 
-            <p>Heidi brings an organized and thorough approach to each matter. She understands that legal proceedings can feel intimidating and overwhelming and takes the time to explain the applicable process, identify the available options, and help clients make informed decisions about how they wish to proceed. Her approach is direct, respectful, and grounded in the understanding that every legal matter affects a real person, family, business, property, or livelihood.</p>
+            <p>Heidi also assists clients with Small Claims Court proceedings, judgment-enforcement matters, and the preparation of court and tribunal documents connected to proceedings within Ontario paralegal scope. She also provides Notary Public and Commissioner for Taking Affidavits services. Residential tenant matters and other legal matters are considered individually and accepted on a case-by-case basis.</p>
 
-            <p>Heidi has experience in legal writing, document preparation, case organization, procedural research, and advocacy. Her professional background also includes proposal and RFP writing, contract documentation, and project coordination, strengthening her ability to analyze detailed information and present complex issues clearly and effectively.</p>
+            <p>Heidi brings an organized and thorough approach to her work. She understands that legal proceedings can feel intimidating and overwhelming and takes the time to explain the applicable process, identify available options and help clients make informed decisions about how they wish to proceed. Her approach is direct and respectful, recognizing that every legal matter may affect a person, family, business, property or livelihood.</p>
 
-            <p>Her work in disability-benefit matters is informed by both professional knowledge and decades of lived experience navigating chronic illness and complex systems. This perspective allows Heidi to approach disability-related matters with a meaningful understanding of the practical barriers clients may face while maintaining the objectivity, diligence, and professionalism required of a legal representative.</p>
+            <p>Heidi has experience in legal writing, document preparation, case organization, procedural research and advocacy. Her professional background also includes proposal and request-for-proposal writing, contract documentation and project coordination. This experience contributes to her structured approach to reviewing detailed information and presenting complex issues clearly.</p>
 
-            <p>At Melville Paralegal Services, Heidi is committed to honest communication, transparent service, and careful preparation. Each matter is assessed individually to determine whether it falls within the permitted scope of Ontario paralegal practice and whether the firm is able to provide appropriate assistance.</p>
+            <p>Her work in disability-benefit matters is also informed by decades of personal experience navigating chronic illness and complex administrative systems. This perspective provides insight into some of the practical barriers clients may experience while preserving the objectivity, diligence and professionalism required of a legal representative.</p>
+
+            <p>At Melville Paralegal Services, Heidi is committed to honest communication, transparent service and careful preparation. Each matter is assessed individually to determine whether it falls within the permitted scope of Ontario paralegal practice and whether Melville Paralegal Services is able to provide appropriate assistance.</p>
 
             <blockquote className="about-quote">
               "Helping clients navigate legal processes with compassion, clarity, strategy and confidence."
@@ -163,7 +165,7 @@ export default function About() {
           </div>
           <div>
             <h3>Licensed by the Law Society of Ontario</h3>
-            <p>Heidi Melville is a Licensed Paralegal regulated by the Law Society of Ontario. Licensed paralegals are subject to professional standards, ethical obligations and continuing education requirements. You can verify any Ontario paralegal's licence at the LSO's public directory.</p>
+            <p>Heidi Melville is a paralegal licensed by the Law Society of Ontario, Licence No. P15789. Licensed paralegals are subject to professional standards, ethical obligations and continuing education requirements. You can verify any Ontario paralegal's licence at the LSO's public directory.</p>
           </div>
           <a href="https://lso.ca/public-resources/finding-a-lawyer-or-paralegal/lawyer-and-paralegal-directory" target="_blank" rel="noreferrer" className="btn-secondary">Verify through the Law Society of Ontario</a>
         </div>

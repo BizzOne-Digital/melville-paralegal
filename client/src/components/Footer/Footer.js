@@ -128,7 +128,7 @@ export default function Footer() {
       <div className="footer-disclaimer">
         <div className="container">
           <p>
-            Heidi Melville is a Licensed Paralegal, P15789 (Ontario), regulated by the Law Society of Ontario.
+            Heidi Melville is a paralegal licensed by the Law Society of Ontario, Licence No. P15789.
             The information on this website is provided for general informational purposes only and does not constitute
             legal advice. Submitting an inquiry or intake form does not create a paralegal-client relationship.
             Representation begins only after Melville Paralegal Services agrees to act and confirms the engagement in
@@ -147,7 +147,6 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© {new Date().getFullYear()} Melville Paralegal Services. All rights reserved.</span>
-          <span>Heidi Melville, Licensed Paralegal · Law Society of Ontario</span>
         </div>
       </div>
     </footer>

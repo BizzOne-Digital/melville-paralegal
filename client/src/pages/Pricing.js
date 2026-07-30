@@ -66,11 +66,12 @@ export default function Pricing() {
           <div className="pricing-philosophy">
             <div className="pricing-phil-text">
               <span className="section-label">Our Approach to Fees</span>
-              <h2>Transparent, Explained in Advance</h2>
+              <h2>Transparent and Explained in Advance</h2>
               <div className="divider-line" style={{ margin: '16px 0' }} />
-              <p>Melville Paralegal Services may offer flat-fee, stage-based, limited-scope, hourly or customized service arrangements depending on the nature and complexity of the matter. Exact prices and the detailed pricing guide are not published on this website. Prospective clients may request general fee information or a matter-specific written quote.</p>
-              <p>Before work begins, clients receive written confirmation of the agreed services, professional fee, applicable HST, anticipated disbursements, payment requirements and services excluded from the agreed scope.</p>
-              <p>Government fees, filing fees, process-serving expenses, searches, reports and other third-party costs are separate from professional fees and are explained clearly as they arise.</p>
+              <p>Melville Paralegal Services may offer flat-fee, stage-based, limited-scope, hourly or customized service arrangements depending on the nature and complexity of the matter.</p>
+              <p>Before work begins, clients receive written confirmation of the agreed services, professional fees, applicable HST, anticipated disbursements, payment requirements and any services excluded from the agreed scope.</p>
+              <p><strong>Disbursements</strong> are expenses paid or incurred on a client's behalf in connection with the legal matter. These may include court or tribunal filing fees, process-server fees, document searches, records, reports, transcripts, courier charges, travel expenses and other third-party costs.</p>
+              <p>Disbursements are separate from professional fees unless expressly included in the written engagement agreement or quote. Known or reasonably anticipated disbursements will be explained in advance whenever possible. Some additional expenses may arise as the matter progresses.</p>
             </div>
             <div className="pricing-phil-card">
               <div className="phil-card-icon">
@@ -83,7 +84,7 @@ export default function Pricing() {
               </div>
               <h3>Request Fee Information</h3>
               <p>Contact us to receive general fee information or a written matter-specific quote before committing to any services.</p>
-              <Link to="/contact" className="btn-primary phil-btn">Request Fee Information</Link>
+              <Link to="/contact" className="btn-primary phil-btn">Book</Link>
               <Link to="/contact" className="btn-secondary phil-btn" style={{ marginTop: 10 }}>Apply for Hardship Pricing</Link>
             </div>
           </div>

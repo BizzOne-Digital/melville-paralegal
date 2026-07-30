@@ -78,7 +78,6 @@ export default function Contact() {
                   <strong>Email</strong>
                   <p>General Inquiries: connect@melvilleparalegal.ca</p>
                   <p>Direct: heidi@melvilleparalegal.ca</p>
-                  <p>Payments: payments@melvilleparalegal.ca</p>
                 </div>
               </div>
               <div className="contact-card">
@@ -183,7 +182,7 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="btn-primary form-submit" disabled={loading}>
-                {loading ? 'Sending...' : 'Request an Initial Consultation'}
+                {loading ? 'Sending...' : 'Submit'}
               </button>
 
               <p style={{ fontSize: '0.78rem', color: 'var(--charcoal-light)', marginTop: 12 }}>

@@ -5,7 +5,7 @@ import './AboutSection.css';
 const stats = [
   { number: 'LSO', label: 'Licensed Paralegal' },
   { number: 'ON', label: 'Ontario-Wide Virtual Services' },
-  { number: '2026', label: 'Platinum Award Winner' },
+  { number: '2026', label: 'CommunityVotes Milton Platinum Award Winner' },
 ];
 
 const values = [

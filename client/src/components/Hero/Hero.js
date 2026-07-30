@@ -34,7 +34,7 @@ const CheckIcon = () => (
 );
 
 const badges = [
-  { icon: <ShieldIcon />, text: 'Licensed by the Law Society of Ontario' },
+  { icon: <ShieldIcon />, text: 'Our Paralegals are Licensed by the Law Society of Ontario' },
   { icon: <HeartIcon />, text: 'Clear Scope of Work and Written Fees' },
   { icon: <ScaleIcon />, text: 'Direct Communication With Your Paralegal' },
 ];

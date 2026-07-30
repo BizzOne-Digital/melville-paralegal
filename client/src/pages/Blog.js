@@ -34,7 +34,7 @@ export default function Blog() {
     <div className="blog-page">
       <PageHeader
         title="Blog & Legal Resources"
-        subtitle="Plain-language articles about Ontario paralegal practice areas. For general information only — not legal advice."
+        subtitle="For General Information Only — Not Legal Advice."
         breadcrumb={[{ label: 'Blog' }]}
       />
 
