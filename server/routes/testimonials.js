@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const Testimonial = require('../models/Testimonial');
 const auth = require('../middleware/auth');
+const { sendNotificationEmail } = require('../utils/mailer');
 
 router.get('/', async (req, res) => {
   const testimonials = await Testimonial.find({ isApproved: true }).sort({ isFeatured: -1, createdAt: -1 });
@@ -12,7 +13,20 @@ router.post('/', async (req, res) => {
     const t = new Testimonial(req.body);
     await t.save();
     res.json({ message: 'Testimonial submitted for review' });
+
+    sendNotificationEmail({
+      subject: `New Testimonial Submitted for Review - ${t.name || 'Website'}`,
+      html: `
+        <h2>New Testimonial Submission</h2>
+        <p><strong>Name:</strong> ${t.name || ''}</p>
+        <p><strong>Service:</strong> ${t.service || ''}</p>
+        <p><strong>Rating:</strong> ${t.rating || ''}</p>
+        <p><strong>Text:</strong><br/>${t.text || ''}</p>
+        <p>Log in to the admin dashboard to approve or deny this testimonial.</p>
+      `,
+    });
   } catch (err) {
+    console.error('[testimonials] Error saving submission:', err.message);
     res.status(500).json({ message: 'Server error' });
   }
 });
