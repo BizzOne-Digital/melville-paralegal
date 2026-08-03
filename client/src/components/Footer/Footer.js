@@ -20,6 +20,26 @@ const MapPinIcon = () => (
   </svg>
 );
 
+const FacebookIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H7.9v-2.88h2.6V9.79c0-2.57 1.53-3.99 3.87-3.99 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.62v1.95h2.86l-.46 2.88h-2.4v6.99A10 10 0 0022 12z"/>
+  </svg>
+);
+
+const InstagramIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </svg>
+);
+
+const LinkedInIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.93v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
+  </svg>
+);
+
 const LSOLogo = () => (
   <img
     src={`${process.env.PUBLIC_URL}/lso-logo.png`}
@@ -147,6 +167,17 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>© {new Date().getFullYear()} Melville Paralegal Services. All rights reserved.</span>
+          <div className="footer-social">
+            <a href="https://www.facebook.com/MelvilleParalegal/" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/melville.paralegal" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <InstagramIcon />
+            </a>
+            <a href="https://www.linkedin.com/company/melville-paralegal-services/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <LinkedInIcon />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
